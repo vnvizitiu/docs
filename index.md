@@ -1,25 +1,24 @@
 ---
-asset_id: 
 layout: HubPage
 
-title: .NET Documentation 
-description:   
-keywords:  
-author:   
-manager:   
-ms.date: 06/20/2016  
-ms.topic: hubpage  
-ms.prod:   
-ms.service:   
-ms.technology:   
-ms.suite: 
+title: .NET Core Documentation
+description:
+keywords:
+author:
+manager:
+ms.date: 06/20/2016
+ms.topic: hubpage
+ms.prod:
+ms.service:
+ms.technology:
+ms.suite:
 ms.assetid:
 ---
 
 <article id="main">
     <section id="hero-content" class="graph">
         <h1>.NET Documentation</h1>
-        <h2>Welcome to .NET! This is the home of the technical documentation for .NET, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. You can look for an answer to a challenging problem or learn .NET for the first time.</h2>
+        <h2>Welcome to .NET! This is the home of the technical documentation for .NET Core, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. You can look for an answer to a challenging problem or learn .NET for the first time.</h2>
     </section>
     <aside class="alert section-border">
         <p>Download .NET Core today</p>
@@ -55,8 +54,8 @@ ms.assetid:
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="docs/welcome.md">
-                                    <h3>.NET Documentation</h3>
-                                    <p>Learn .NET concepts and language syntax.</p>
+                                    <h3>.NET Core Documentation</h3>
+                                    <p>Learn .NET Core concepts and language syntax.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
@@ -174,15 +173,21 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="http://docs.unity3d.com/Manual/index.html">
-                                    <h3>Unity</h3>
-                                    <p>Build games for desktop, console and mobile in C# with Unity.</p>
+                                <a href="http://docs.cryengine.com/display/CEPROG/CE%23+Programming">
+                                    <h3>CRYENGINE</h3>
+                                    <p>Build games for desktop, console and mobile in C# with CRYENGINE.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="http://www.monogame.net/documentation/?page=main">
                                     <h3>MonoGame</h3>
                                     <p>Build games for desktop, console and mobile in C# with MonoGame.</p>
+                                </a>
+                            </li>
+                            <li class="column column-third">
+                                <a href="http://docs.unity3d.com/Manual/index.html">
+                                    <h3>Unity</h3>
+                                    <p>Build games for desktop, console and mobile in C# with Unity.</p>
                                 </a>
                             </li>
                         </ul>

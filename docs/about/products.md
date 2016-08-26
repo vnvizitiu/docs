@@ -39,10 +39,11 @@ You can build desktop apps for Windows and macOS.
 
 ### Games
 
-You can build games for many desktop, mobile, console and virtual/agumented reality devices.
+You can build games for many desktop, mobile, console and virtual/augmented reality devices.
 
-- [Unity](http://docs.unity3d.com/Manual/index.html) with [Mono](#mono)
+- [CRYENGINE](http://docs.cryengine.com/display/CEPROG/CE%23+Programming) with [Mono](#mono)
 - [MonoGame](http://www.monogame.net/documentation/?page=main) with [Mono](#mono)
+- [Unity](http://docs.unity3d.com/Manual/index.html) with [Mono](#mono)
 
 ### IoT
 
@@ -103,7 +104,7 @@ The .NET Framework is used to build apps for Windows and Windows Server. You can
 
 [ASP.NET](http://www.asp.net/) is a web framework. It has several distinct pieces which are used to produce modern and high-performance web applications. 
 
-- [ASP.NET Web Forms](http://www.asp.net/web-forms) enables you to build a "forms over data" UI more radidly than most other Web technologies, with a designer that enables drag-and-drop of web controls. 
+- [ASP.NET Web Forms](http://www.asp.net/web-forms) enables you to build a "forms over data" UI more rapidly than most other Web technologies, with a designer that enables drag-and-drop of web controls. 
 - [ASP.NET MVC](http://www.asp.net/mvc) gives you greater control over the entire web pipeline, from the HTTP layer to the user interface. 
 - [ASP.NET WebAPI](http://www.asp.net/web-api) is a convention-based framework for creating REST services. 
 - [SignalR](http://www.asp.net/signalr) allows you to provide push-based communication to your web applications using the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) protocol.
@@ -130,7 +131,7 @@ There are several components that make up Mono:
 
 ### Xamarin SDK
 
-The [Xamarin SDK](https://open.xamarin.com) is used to build native mobile and device apps, primarily for Apple and Google ecosystems. It is based on Mono and is open source using the MIT license. You can use it to build iOS and Android apps for phones, tablets and watches. [Xamarin.Forms](https://www.xamarin.com/forms) is a popular way to write reusable UIs across Apple, Google and Windows apps.
+The [Xamarin SDK](http://open.xamarin.com) is used to build native mobile and device apps, primarily for Apple and Google ecosystems. It is based on Mono and is open source using the MIT license. You can use it to build iOS and Android apps for phones, tablets and watches. [Xamarin.Forms](https://www.xamarin.com/forms) is a popular way to write reusable UIs across Apple, Google and Windows apps.
 
 - Learn about the [Xamarin SDK](https://developer.xamarin.com/)
 - [Download Xamarin](https://www.xamarin.com/platform)

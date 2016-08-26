@@ -26,6 +26,7 @@ News
 
 There is always something new to learn or explore in the .NET community. Here's the latest news you may want to check out.
 
+- [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/)
 - [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0)
 - [Announcing ASP.NET Core 1.0](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/)
 - [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)
@@ -46,7 +47,7 @@ This documentation will show you how to build an app from scratch or finish one 
 Open Source
 -----------
 
-Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/core-docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
+Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/core-docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/dotnet/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
 
 Community
 ---------

@@ -369,7 +369,7 @@ For the second option, you'll need to build a NuGet package out of your `.dll` f
 }
 ```
 
-To see an example of packaging up cross-platform native binaries, check out the [ASP.NET Libuv Package](https://github.com/aspnet/libuv-package) and the [corresponding reference in KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer/blob/dev/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L18).
+To see an example of packaging up cross-platform native binaries, check out the [ASP.NET Libuv Package](https://github.com/aspnet/libuv-package) and the [corresponding reference in KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19).
 
 ## How to test libraries on .NET Core
 
@@ -397,7 +397,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
    * `netcoreapp1.0` listed as the only entry under `frameworks`.
    * A reference to `Microsoft.NETCore.App` version `1.0.0`.
    * A reference to xUnit version `2.2.0-beta2-build3300`.
-   * A reference to `dotnet-test-xunit` version `1.0.0-preview2-build1029`
+   * A reference to `dotnet-test-xunit` version `2.2.0-preview2-build1029`
    * A project reference to the library being tested.
    * The entry `"testRunner":"xunit"`.
    
@@ -416,7 +416,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
                 "type":"platform"
             },
             "xunit":"2.2.0-beta2-build3300",
-            "dotnet-test-xunit":".0.0-preview2-build1029",
+            "dotnet-test-xunit":"2.2.0-preview2-build1029",
         },
         "frameworks":{
             "netcoreapp1.0":{}

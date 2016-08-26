@@ -20,31 +20,15 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 ## Prerequisites
 
-* [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs). If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
-
-* [NuGet Manager extension for Visual Studio](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix). NuGet is the package manager for the Microsoft development platform including .NET Core. When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project (add references, change config files, etc.).
-
-* [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=817245). This installs templates and other tools for Visual Studio 2015, as well as .NET Core 1.0 itself.
-
-* A supported version of the Windows client or server operating system. For a list of supported versions, see [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md).
+Follow the instructions on [our prerequisites page](../windows-prerequisites.md) to update your environment.
 
 ## Getting Started
 
 The following steps will set up Visual Studio 2015 for .NET Core development:
 
-1. Verify that you're running Visual Studio 2015 Update 3:
+1. Open Visual Studio, and on the **File** menu, choose **New**, **Project**.
 
-   * On the **Help** menu, choose **About Microsoft Visual Studio**.
-
-   * In the About Microsoft Visual Studio dialog, the version number should include "Update 3" (or higher).
-
-2. Download and install the [.NET Core for Visual Studio official MSI Installer](https://go.microsoft.com/fwlink/?linkid=817245). This will install the .NET Core Tooling Preview 2 for Visual Studio 2015.
-
-3. Download and install [NuGet Manager extension for Visual Studio](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix). This will install the latest version of the extension.
-
-4. Open Visual Studio, and on the **File** menu, choose **New**, **Project**.
-
-5. In the **New Project** dialog, in the **Templates** list, expand the **Visual C#** node and choose **.NET Core**. You should see three new project templates for **Class Library (.NET Core)**, **Console Application (.NET Core)**, and **ASP.NET Core Web Application (.NET Core)**.
+2. In the **New Project** dialog, in the **Templates** list, expand the **Visual C#** node and choose **.NET Core**. You should see three new project templates for **Class Library (.NET Core)**, **Console Application (.NET Core)**, and **ASP.NET Core Web Application (.NET Core)**.
 
 A solution using only .NET Core projects
 ----------------------------------------
@@ -57,7 +41,7 @@ A solution using only .NET Core projects
 
 3. In Solution Explorer, open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
+4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Browse for **Newtonsoft.Json**. Click **Install**. 
 
 5. Open the context menu for the **References** node and choose  **Restore packages**.
 
@@ -143,14 +127,14 @@ A mixed .NET Core library and .NET Framework application
 Starting from the solution obtained with the previous script, execute the following steps:
 
 1. In Solution Explorer, open the `project.json` file for the **Library** project and replace `"frameworks": {
-    "netstandard1.6"` with `"frameworks": {
-    "netstandard1.4"`.
+    "netstandard1.6" }` with `"frameworks": {
+    "netstandard1.4" }`.
 
 2. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.
 
    The solution should still build and function exactly like it did before: the test should pass, and the console application should run and be debuggable.
 
-3. In the **Library"" Project, open the context menu and choose **Build**.
+3. In the **Library** project, open the context menu and choose **Build**.
 
 4. In Solution Explorer, open the context menu for the `src` folder, and choose **Add**. , **New Project**.
 
@@ -187,7 +171,7 @@ Moving a library from netstandard 1.4 to 1.3
 
 1. In Solution Explorer, open the `project.json` file in the **Library** project.
 
-2. Replace `frameworks": { "netstandard1.4"` with `frameworks": { "netstandard1.3"`.
+2. Replace `frameworks": { "netstandard1.4" }` with `frameworks": { "netstandard1.3" }`.
 
 3. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.
 
@@ -238,7 +222,49 @@ Close the previous solution if it was open: you will be starting a new script fr
 
 Moving a PCL to a NetStandard library
 -------------------------------------
+The Portable Class Library tooling can automatically modify your PCL to target .NET Standard. 
 
-The PCL library that we built in the previous procedure is based on a `csproj` project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty **.NET Core Class Library** project.
+1.	Double click on the “Properties” node to open the Project Property page*
 
-If you have older PCL libraries with a `xproj` file and a `project.json` file, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.6.0"`, and target "netstandard1.3".
+2.	Under the “Targeting header” click the hyperlink “Target .NET Platform Standard”
+
+3.	Click “Yes” when asked for confirmation
+
+The tooling will automatically select the version of .NET Standard that includes all of the targets originally targeted by your PCL. You can target a different version of .NET Standard using the .NET Standard dropdown in the project property page.
+ 
+* If you previously had a packages.config, you may be prompted to uninstall any installed packages before the conversion.
+
+### Manually edit project.json to target .NET Standard from an existing Portable Class Library
+
+1.	If your project.json contains “dnxcore50” in the “supports” element, remove it.
+
+2.	Remove the dependency on “Microsoft.NETCore”
+
+3.	Modify the dependency on “Microsoft.NETCore.Portable.Compatibility” version “1.0.0” to version “1.0.1”
+
+4.	Add a dependency on “NETStandard.Library” version “1.6.0”
+
+5.	From the “frameworks” element, remove the “dotnet” framework (and the “imports” element within it)
+
+6.	Add ` "netstandard1.x” : { } ` to the frameworks element, where x is replaced with the version of .NET Standard you want to target
+
+### Example project.json
+
+This project.json includes supports clauses for UWP and .NET 4.6 and targets netstandard1.3:
+```
+{
+  "supports": {
+    "net46.app": {},
+    "uwp.10.0.app": {},
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1"
+  },
+  "frameworks": {
+    "netstandard1.3" : {}
+  }
+}
+```
+
+
