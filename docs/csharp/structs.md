@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: a7094b8c-7229-4b6f-82fc-824d0ea0ec40
 ---
 
-# 🔧 Structs
+# &#128295; Structs
 
 > **Note**
 > 
