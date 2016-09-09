@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 8045b1b8-7835-4a7a-980d-bc9c70d62a0c
 ---
 
-# 🔧 Parallel programming
+# `🔧` Parallel programming
 
 > **Note**
 > 
