@@ -32,7 +32,7 @@ The [Tutorials](tutorials/index.md) also have step-by-step guides for various sk
 
 ## If You're Experienced with F# #
 
-If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference).
+If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference).
 
 ## The F# Software Foundation
 
@@ -44,15 +44,23 @@ To learn more and get involved, check out [fsharp.org](http://fsharp.org).
 
 ## Documentation
 
-* [Getting Started](tutorials/getting-started/index.md)
-* [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
 * [Tutorials](tutorials/index.md)
+* [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
 * [Language Reference](language-reference/index.md)
-* [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference)
+* [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference)
+
+## Online Reading Resources
+
+* [F# for Fun and Profit Gitbook](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) 
+* [F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming)
+
+## Video Learning Resources
+
+* [Introduction to Programming with F# series on YouTube](https://www.youtube.com/watch?v=Teak30_pXHk&list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC)
+* [Introduction to F# series on FSharpTV](https://fsharp.tv/courses/fsharp-programming-intro/)
 
 ## Further Resources
 
-* [F# Learning Resources](http://fsharp.org/learn.html)
-* [F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/)
-* [F# Snippets](http://www.fssnip.net)
+* [F# Learning Resources on fsharp.org](http://fsharp.org/learn.html)
+* [F# Snippets Website](http://www.fssnip.net)
 * [F# Software Foundation](http://fsharp.org)
