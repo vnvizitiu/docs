@@ -1,7 +1,7 @@
 ---
 title: .NET Core CLI extensibility model 
 description: .NET Core CLI extensibility model 
-keywords: .NET, .NET Core
+keywords: CLI, extensibility, custom commands, .NET Core
 author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
@@ -28,7 +28,7 @@ The two extensibility mechanisms outlined above are not exclusive; you can use b
 depends largely on what is the goal you are trying to achieve with your extension.
 
 ## Per-project based extensibility
-Per-project tools are [portable console applications](../app-types.md) that are distributed as NuGet packages. Tools are 
+Per-project tools are [portable console applications](../deploying/index.md) that are distributed as NuGet packages. Tools are 
 only available in the context of the project that references them and for which they are restored; invocation outside 
 of the context of the project (for example, outside of the directory that contains the project) will fail as the command will 
 not be able to be found.

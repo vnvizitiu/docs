@@ -12,8 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 ---
 
-.NET Products
-=============
+#.NET Concepts
+
+>[!WARNING]
+This article will be rewritten.
 
 .NET is a very flexible, general purpose and inherently cross-platform [specification](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) for building developer products. It is used for all of the most popular app categories: desktop, mobile, cloud, gaming and IoT.
 
@@ -22,8 +24,7 @@ There are two subtly different terms used in this document:
 - ".NET product" - Enables you to build an app for one or more target platforms.
 - ".NET implementation" - Some combination of a runtime, framework and tools that can execute ".NET code" on which products are based.
 
-Product Categories
-------------------
+## Product Categories
 
 .NET products are available for each of the following product categories.
 
@@ -32,7 +33,7 @@ Product Categories
 You can build desktop apps for Windows and macOS.
 
 - [Universal Windows Apps](https://developer.microsoft.com/windows) with [.NET Native](#net-native)
-- [Windows Presentation Framework (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) for Windows with the [.NET Framework](#net-framework)
+- [Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) for Windows with the [.NET Framework](#net-framework)
 - [Windows Forms](https://msdn.microsoft.com/library/dd30h2yb.aspx) for Windows with the [.NET Framework](#net-framework)
 - Cocoa for macOS with [Xamarin](#xamarin-sdk)
 - [Electron](http://electron.atom.io/) for cross-platform desktop with [electron-edge](https://github.com/kexplo/electron-edge)

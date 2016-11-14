@@ -39,7 +39,8 @@
         {
           "files": ["**/*.md"],
           "src": "docs",
-          "dest": "articles"
+          "dest": "articles",
+          "exclude": ["**/includes/**", "***/contributing.md"] 
         },
         {
           "files": ["*.md"],
@@ -56,6 +57,7 @@
           "files": [
             "images/**", 
             "**/*.png",
+            "**/*.svg",            
             "**/*.jpg",
             "**/*.gif",
             "**/*.bmp"

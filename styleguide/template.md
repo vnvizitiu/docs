@@ -23,14 +23,14 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 # Metadata and Markdown Template
 
-This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/core-docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
 
 ## Metadata 
 
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/template.md)), divided into required fields and optional fields. Some key notes:
+The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
 
 - You **must** have a space between the colon (:) and the value for a metadata element.
 - If an optional metadata element does not have a value, comment out the element with a # or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.
@@ -202,7 +202,53 @@ You can use a [Markdown table generator tool](http://www.tablesgenerator.com/mar
 
 ## Code
 
-### Code blocks with language identifier
+The best way to include code is to include snippets from a working sample. Create your
+sample following the instructions in the [contributing guide](../CONTRIBUTING.md#contributing-to-samples).
+
+You can include the code using include syntax:
+
+```
+[!code-csharp[<title>](<pathToFile>#<RegionName)]
+```
+
+The example above shows C# syntax, but other languages are supported.
+Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
+Other languages that are supported are:
+* C++: `code-cpp`
+* HTML: `code-html`
+* JavaScript: `code-javascript`
+* Powershell: `code-ps`
+* SQL: `code-sql`
+* XML: `code-xml`
+
+
+
+The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
+is the path to the source file. The `<RegionName>` should be a region in your source
+code that should be included. Use the `#region` and `#endregion` preprocessor syntax
+to specify the region of code to include.
+
+For cases where regions don't work, you can specify the start and end of a snippet
+using an XML element name in a single line comment. For example, you could write this in C#:
+
+```csharp
+// <CodeToInclude>
+int j = 5;
+int i ; 10;
+int sum = i + j;
+// </CodeToInclude>
+```
+
+In other languages, use the comment syntax for that language.
+Finally, you can use line
+numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
+because they are very brittle.
+
+Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
+system. However, if you need to show something that causes compile time or
+runtime errors, you can use inline code blocks.
+
+### Inline code blocks with language identifier
 
 Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
 

@@ -51,7 +51,7 @@ If you already have an EDMX file, you can skip this step.
 
 #### To create an EDMX file
 
-- If you don't already have an EDMX file, you can follow the instructions at the end of this walkthrough in the step **To configure the Entity Data Model**.
+- If you don't already have an EDMX file, you can follow the instructions at the end of this walkthrough in the step [Configuring the Entity Data Model](generating-fsharp-types-from-edmx.md#configuring-the-entity-data-model).
 <br />
 
 ## Creating the project
@@ -109,12 +109,12 @@ open System.Data.SqlClient
 open System.Data.EntityClient
 open System.Data.Metadata.Edm
 
-let getEDMConnectionString(dbConnectionString) =
-let dbConnection = new SqlConnection(connectionString)
-let resourceArray = [| "res://*/" |]
-let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
-let metaData = MetadataWorkspace(resourceArray, assemblyList)
-new EntityConnection(metaData, dbConnection)
+let getEDMConnection(dbConnectionString) =
+  let dbConnection = new SqlConnection(dbConnectionString)
+  let resourceArray = [| "res://*/" |]
+  let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
+  let metaData = MetadataWorkspace(resourceArray, assemblyList)
+  new EntityConnection(metaData, dbConnection)
 ```
 
 ## Configuring the type provider
@@ -133,11 +133,11 @@ In this step, you create and configure the type provider with the EDMX connectio
 <br />
 
 ```fsharp
-type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>>
+type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>">
 
-let edmConnectionString =
-getEDMConnectionString("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
-let context = new edmx.SchoolModel.SchoolEntities(edmConnectionString)
+use edmConnection =
+  getEDMConnection("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
+use context = new edmx.SchoolModel.SchoolEntities(edmConnection)
 ```
 
 ## Querying the data
@@ -164,13 +164,13 @@ query {
 query { 
   for course in context.Courses do
   where (course.DepartmentID = 1)
-  select course)
+  select course
 } |> Seq.iter (fun course -> printfn "%s" course.Title)
 
 // Join two tables
 query { 
   for course in context.Courses do
-  join (for dept in context.Departments -> course.DepartmentID = dept.DepartmentID)
+  join dept in context.Departments on (course.DepartmentID = dept.DepartmentID)
   select (course, dept.Name) 
 } |> Seq.iter (fun (course, deptName) -> printfn "%s %s" course.Title deptName)
 ```
@@ -192,13 +192,13 @@ let nullable value = new System.Nullable<_>(value)
 // Throw an exception if more than one matching person is found.
 let changeHireDate(lastName, firstName, hireDate) =
 
-query { 
-  for person in context.People do
-  where (person.LastName = lastName &&
-  person.FirstName = firstName)
-  exactlyOne 
-} |> (fun person ->
-          context.UpdatePerson(nullable person.PersonID, person.LastName, person.FirstName, nullable hireDate, person.EnrollmentDate))
+  query { 
+    for person in context.People do
+    where (person.LastName = lastName &&
+           person.FirstName = firstName)
+    exactlyOne 
+  } |> (fun person ->
+            context.UpdatePerson(nullable person.PersonID, person.LastName, person.FirstName, nullable hireDate, person.EnrollmentDate))
 
 changeHireDate("Abercrombie", "Kim", DateTime.Parse("1/12/1998"))
 |> printfn "Result: %d"
