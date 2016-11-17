@@ -14,6 +14,10 @@ ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 
 #dotnet-new
 
+> [!div class="op_single_selector"]
+- [ Visual Studio 2015 - .NET Core Tools Preview 2](dotnet-new.md)
+- [Visual Studio 2017 RC - .NET Core Tools Preview 3](../preview3/tools/dotnet-new.md)
+
 ## Name
 `dotnet-new` - Creates a new .NET Core project in the current directory.
 
