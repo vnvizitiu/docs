@@ -75,7 +75,7 @@
     ],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/toc.json",
-      "_displayLangs": ["csharp"],
+      "_displayLangs": ["csharp","vb"],
       "author": "dotnet-bot"
     },
     "dest": "_site",
