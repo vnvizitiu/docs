@@ -76,7 +76,22 @@
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/toc.json",
       "_displayLangs": ["csharp","vb"],
-      "author": "dotnet-bot"
+      "author": "dotnet-bot",
+      "searchScope": [".NET"]
+    },
+    "fileMetadata": {
+      "ms.prod":
+      {
+        "api_ref/**.yml": ".net"
+      },
+      "ms.topic":
+      {
+        "api_ref/**.yml": "managed-reference"
+      },
+      "ms.author":
+      {
+        "api_ref/**.yml": "dotnetcontent"
+      }
     },
     "dest": "_site",
     "template": [ "docs.html" ],
