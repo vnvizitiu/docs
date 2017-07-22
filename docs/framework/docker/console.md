@@ -1,12 +1,12 @@
 ---
-title: Running Console applications in Docker
+title: Running Console applications in Docker | Microsoft Docs
 description: Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.
 author: spboyer
 keywords: .NET, Container, Console, Applications
 
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: .net-framework-4.6
+ms.prod: .net-framework
 ms.technology: vs-ide-deployment
 ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
@@ -22,7 +22,7 @@ The sample console application is a simple example which takes an argument, a qu
 
 In addition to the answer, the `Environment.MachineName` has been added to the response to show the difference between running the application locally and in a Windows container. When running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.
 
-The complete example is available in the [dotnet/core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).
+The [complete example](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/docs repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 You need to be familiar with some Docker terms before you begin working
 on moving your application to a container.
@@ -89,7 +89,7 @@ The first line in the Dockerfile designates the base image using the [`FROM`](ht
 ## Creating the image
 In order to create the Docker image, the following code is added to the *build.ps1* script. When the script is run, the `console-random-answer-generator` image is created using the assets compiled from MSBuild defined in the [Building the application](#building-the-application) section.
 
-```
+```powershell
 $ImageName="console-random-answer-generator"
 
 function Invoke-Docker-Build ([string]$ImageName, [string]$ImagePath, [string]$DockerBuildArgs = "") {

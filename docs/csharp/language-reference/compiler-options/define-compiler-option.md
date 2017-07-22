@@ -40,7 +40,7 @@ The **/define** option defines `name` as a symbol in all source code files your 
   
 ## Syntax  
   
-```  
+```console  
 /define:name[;name2]  
 ```  
   
@@ -57,7 +57,7 @@ The **/define** option defines `name` as a symbol in all source code files your 
   
  You can define multiple symbols with **/define** by using a semicolon or comma to separate symbol names. For example:  
   
-```  
+```console  
 /define:DEBUG;TUESDAY  
 ```  
   
@@ -76,7 +76,7 @@ The **/define** option defines `name` as a symbol in all source code files your 
   
 ## Example  
   
-```  
+```csharp  
 // preprocessor_define.cs  
 // compile with: /define:xx  
 // or uncomment the next line  
@@ -97,4 +97,4 @@ public class Test
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

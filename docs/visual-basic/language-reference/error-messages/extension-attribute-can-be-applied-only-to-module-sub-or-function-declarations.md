@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC36550"
 ms.assetid: 4387a51f-733c-45d7-abdb-eb64d4f51078
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -62,10 +62,9 @@ Namespace StringUtility
         End Sub  
     End Module  
 End Namespace  
-  
 ```  
   
 ## See Also  
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

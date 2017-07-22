@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "Get statement, property procedures"
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -44,9 +44,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Property Procedures (Visual Basic)
-A property procedure is a series of [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
+A property procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
   
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides for the following property procedures:  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides for the following property procedures:  
   
 -   A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
   

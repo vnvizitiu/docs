@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC36593"
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -64,4 +64,4 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)   
  [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)   
  [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
- [References Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic)
+ [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 730a6670-fb8c-41fc-8a1b-eb97a837e432
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve the Shallow Value of an Element (Visual Basic)
@@ -27,7 +27,7 @@ This topic shows how to get the shallow value of an element. The shallow value i
 ## Example  
  The following text file, Report.xml, is the source for this example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Report>  
   <Section>  

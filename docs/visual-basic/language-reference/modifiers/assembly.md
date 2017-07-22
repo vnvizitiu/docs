@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "attribute blocks, Assembly keyword"
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -51,4 +51,5 @@ Specifies that an attribute at the beginning of a source file applies to the ent
   
 ## See Also  
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+

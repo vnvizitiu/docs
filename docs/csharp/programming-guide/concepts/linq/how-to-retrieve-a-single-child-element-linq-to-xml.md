@@ -31,7 +31,7 @@ This topic explains how to retrieve a single child element, given the name of th
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-```cs  
+```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml");  
 XElement e = po.Element("DeliveryNotes");  
 Console.WriteLine(e);  
@@ -40,7 +40,6 @@ Console.WriteLine(e);
  This example produces the following output:  
   
 ```xml  
-  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
@@ -49,7 +48,7 @@ Console.WriteLine(e);
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XElement po = XElement.Load("PurchaseOrderInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement e = po.Element(aw + "DeliveryNotes");  
@@ -59,7 +58,6 @@ Console.WriteLine(e);
  This example produces the following output:  
   
 ```xml  
-  
 <aw:DeliveryNotes xmlns:aw="http://www.adventure-works.com">Please leave packages in shed by driveway.</aw:DeliveryNotes>  
 ```  
   

@@ -59,7 +59,7 @@ You can set up a button that you can use to cancel an async application if you d
   
 1.  Declare a `CancellationTokenSource` variable, `cts`, that’s in scope for all methods that access it.  
   
-    ```cs  
+    ```csharp  
     public partial class MainWindow : Window  
     {  
         // ***Declare a System.Threading.CancellationTokenSource.  
@@ -68,7 +68,7 @@ You can set up a button that you can use to cancel an async application if you d
   
 2.  Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> method to notify `cts` when the user requests cancellation.  
   
-    ```cs  
+    ```csharp  
     // ***Add an event handler for the Cancel button.  
     private void cancelButton_Click(object sender, RoutedEventArgs e)  
     {  
@@ -83,14 +83,14 @@ You can set up a button that you can use to cancel an async application if you d
   
     -   Instantiate the `CancellationTokenSource`, `cts`.  
   
-        ```cs  
+        ```csharp  
         // ***Instantiate the CancellationTokenSource.  
         cts = new CancellationTokenSource();  
         ```  
   
     -   In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.  
   
-        ```cs  
+        ```csharp  
         try  
         {  
             // ***Send a token to carry the message if cancellation is requested.  
@@ -113,7 +113,7 @@ You can set up a button that you can use to cancel an async application if you d
   
      The following code shows the changes in `AccessTheWebAsync`.  
   
-    ```cs  
+    ```csharp  
     // ***Provide a parameter for the CancellationToken.  
     async Task<int> AccessTheWebAsync(CancellationToken ct)  
     {  
@@ -176,7 +176,7 @@ You can set up a button that you can use to cancel an async application if you d
   
 1.  Add a method to create a list of web addresses.  
   
-    ```cs  
+    ```csharp  
     // ***Add a method that creates a list of web addresses.  
     private List<string> SetUpURLList()  
     {  
@@ -196,14 +196,14 @@ You can set up a button that you can use to cancel an async application if you d
   
 2.  Call the method in `AccessTheWebAsync`.  
   
-    ```cs  
+    ```csharp  
     // ***Call SetUpURLList to make a list of web addresses.  
     List<string> urlList = SetUpURLList();  
     ```  
   
 3.  Add the following loop in `AccessTheWebAsync` to process each web address in the list.  
   
-    ```cs  
+    ```csharp  
     // ***Add a loop to process the list of web addresses.  
     foreach (var url in urlList)  
     {  
@@ -222,17 +222,19 @@ You can set up a button that you can use to cancel an async application if you d
   
 4.  Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.  
   
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
+    ```csharp  
+    async Task AccessTheWebAsync(CancellationToken ct)  
+    ```  
+  
      Call the method from `startButton_Click` by using a statement instead of an expression.  
   
-    ```cs  
+    ```csharp  
     await AccessTheWebAsync(cts.Token);  
     ```  
   
 5.  If you don’t cancel the program, it produces the following output.  
   
     ```  
-  
     Length of the downloaded string: 35939.  
   
     Length of the downloaded string: 237682.  
@@ -248,7 +250,6 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 145790.  
   
     Downloads complete.  
-  
     ```  
   
      If you choose the **Cancel** button before the downloads are complete, the output contains the lengths of the downloads that completed before the cancellation.  
@@ -261,7 +262,6 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 128607.  
   
     Downloads canceled.  
-  
     ```  
   
 ##  <a name="BKMK_CompleteExamples"></a> Complete Examples  
@@ -272,7 +272,7 @@ You can set up a button that you can use to cancel an async application if you d
 ### Cancel a Task Example  
  The following code is the complete MainWindow.xaml.cs file for the example that cancels a single task.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -383,7 +383,7 @@ namespace CancelATask
 ### Cancel a List of Tasks Example  
  The following code is the complete MainWindow.xaml.cs file for the example that cancels a list of tasks.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -528,6 +528,6 @@ namespace CancelAListOfTasks
 ## See Also  
  <xref:System.Threading.CancellationTokenSource>   
  <xref:System.Threading.CancellationToken>   
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
+ [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
  [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)   
  [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)

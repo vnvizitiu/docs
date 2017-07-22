@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, walkthrough"
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -53,7 +53,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
   
 -   Adding data-bound controls.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## Creating a DataRepeater Solution  
  In the first step, you create a project and solution.  

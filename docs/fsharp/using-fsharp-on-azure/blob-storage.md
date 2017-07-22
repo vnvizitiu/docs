@@ -1,5 +1,5 @@
 ---
-title: Get started with Azure Blob storage using F#
+title: Get started with Azure Blob storage using F# | Microsoft Docs
 description: Store unstructured data in the cloud with Azure Blob storage.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
@@ -18,17 +18,17 @@ Azure Blob storage is a service that stores unstructured data in the cloud as ob
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 
-For a conceptual overview of blob storage, see [the .NET guide for blob storage](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-blobs).
+For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/storage-dotnet-how-to-use-blobs).
 
 ## Prerequisites
 
-To use this guide, you must first [create an Azure storage account](https://docs.microsoft.com/azure/storage/storage-create-storage-account). You also need your storage access key for this account.
+To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account). You also need your storage access key for this account.
 
 ## Create an F# Script and Start F# Interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `blobs.fsx`, in your F# development environment.
 
-Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
+Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` and `Microsoft.WindowsAzure.ConfigurationManager` packages and reference `WindowsAzure.Storage.dll` and `Microsoft.WindowsAzure.Configuration.dll` in your script using a `#r` directive.
 
 ### Add namespace declarations
 
@@ -38,7 +38,7 @@ Add the following `open` statements to the top of the `blobs.fsx` file:
 
 ### Get your connection string
 
-You need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://docs.microsoft.com/azure/storage/storage-configure-connection-string).
+You need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](/azure/storage/storage-configure-connection-string).
 
 For the tutorial, you enter your connection string in your script, like this:
 
@@ -104,23 +104,21 @@ You can also name blobs with path information in their names. This creates a vir
 
 For example, consider the following set of block blobs in a container named `photos`:
 
-```none
-    photo1.jpg
-    2015/architecture/description.txt
-    2015/architecture/photo3.jpg
-    2015/architecture/photo4.jpg
-    2016/architecture/photo5.jpg
-    2016/architecture/photo6.jpg
-    2016/architecture/description.txt
-    2016/photo7.jpg
-```
+*photo1.jpg*
+*2015/architecture/description.txt*
+*2015/architecture/photo3.jpg*
+*2015/architecture/photo4.jpg*
+*2016/architecture/photo5.jpg*
+*2016/architecture/photo6.jpg*
+*2016/architecture/description.txt*
+*2016/photo7.jpg*
 
 When you call `ListBlobs` on a container (as in the above sample), a hierarchical listing is returned. If it contains both `CloudBlobDirectory` and `CloudBlockBlob` objects, representing the directories and blobs in the container, respectively, then the resulting output looks similar to this:
 
-```none
-	Directory: https://<accountname>.blob.core.windows.net/photos/2015/
-	Directory: https://<accountname>.blob.core.windows.net/photos/2016/
-	Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
+```console
+Directory: https://<accountname>.blob.core.windows.net/photos/2015/
+Directory: https://<accountname>.blob.core.windows.net/photos/2016/
+Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
 ```
 
 Optionally, you can set the `UseFlatBlobListing` parameter of the `ListBlobs` method to `true`. In this case, every blob in the container is returned as a `CloudBlockBlob` object. The call to `ListBlobs` to return a flat listing looks like this:
@@ -129,15 +127,15 @@ Optionally, you can set the `UseFlatBlobListing` parameter of the `ListBlobs` me
 
 and, depending on the current contents of your container, the results look like this:
 
-```none
-	Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2015/architecture/description.txt
-	Block blob of length 314618: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo3.jpg
-	Block blob of length 522713: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo4.jpg
-	Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2016/architecture/description.txt
-	Block blob of length 419048: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo5.jpg
-	Block blob of length 506388: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo6.jpg
-	Block blob of length 399751: https://<accountname>.blob.core.windows.net/photos/2016/photo7.jpg
-	Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
+```console
+Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2015/architecture/description.txt
+Block blob of length 314618: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo3.jpg
+Block blob of length 522713: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo4.jpg
+Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2016/architecture/description.txt
+Block blob of length 419048: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo5.jpg
+Block blob of length 506388: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo6.jpg
+Block blob of length 399751: https://<accountname>.blob.core.windows.net/photos/2016/photo7.jpg
+Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
 ```
 
 ## Download blobs
@@ -222,14 +220,14 @@ By default, Azure Storage keeps your data secure by limiting access to the accou
 
 By default, the blob data in your storage account is accessible only to storage account owner. Authenticating requests against Blob storage requires the account access key by default. However, you might want to make certain blob data available to other users.
 
-For details on how to control access to blob storage, see [the .NET guide for blob storage section on access control](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-blobs#controlling-access-to-blob-data).
+For details on how to control access to blob storage, see [the .NET guide for blob storage section on access control](/azure/storage/storage-dotnet-how-to-use-blobs#controlling-access-to-blob-data).
 
 
 ### Encrypting blob data
 
 Azure Storage supports encrypting blob data both at the client and on the server.
 
-For details on encrypting blob data, see [the .NET guide for blob storage section on encryption](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-blobs#encrypting-blob-data).
+For details on encrypting blob data, see [the .NET guide for blob storage section on encryption](/azure/storage/storage-dotnet-how-to-use-blobs#encrypting-blob-data).
 
 ## Next steps
 
@@ -238,7 +236,7 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 ### Tools
 - [F# AzureStorageTypeProvider](http://fsprojects.github.io/AzureStorageTypeProvider/) An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
 - [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) An F# API for using Microsoft Azure Table Storage service
-- [Microsoft Azure Storage Explorer (MASE)](https://docs.microsoft.com/azure/vs-azure-tools-storage-manage-with-storage-explorer) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
+- [Microsoft Azure Storage Explorer (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
 
 ### Blob storage reference
 
@@ -248,6 +246,6 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 ### Related guides
 
 - [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
-- [Transfer data with the AzCopy command-line utility](https://docs.microsoft.com/azure/storage/storage-use-azcopy)
+- [Transfer data with the AzCopy command-line utility](/azure/storage/storage-use-azcopy)
 - [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)

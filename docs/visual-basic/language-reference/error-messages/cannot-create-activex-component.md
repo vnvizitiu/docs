@@ -15,8 +15,8 @@ dev_langs:
   - "VB"
 ms.assetid: 7fc5a271-8195-40a2-89f9-e05fd71bb8e0
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -42,4 +42,4 @@ You tried to place an ActiveX control on a form at design time or add a form to 
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

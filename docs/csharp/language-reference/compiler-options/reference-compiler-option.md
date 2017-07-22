@@ -42,7 +42,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
   
 ## Syntax  
   
-```  
+```console  
 /reference:[alias=]filename  
 /reference:filename  
 ```  
@@ -78,7 +78,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
  The csc response (.rsp) file, which references commonly used .NET Framework assemblies, is used by default. Use [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) if you do not want the compiler to use csc.rsp.  
   
 > [!NOTE]
->  In Visual Studio, use the **Add Reference** dialog box. For more information, see [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9). In Visual Studio 2010 and later versions, to ensure equivalent behavior between adding references by using `/reference` and by using the **Add Reference** dialog box, the **Embed Interop Types** property must be set to **False** for the assembly that you are adding. **True** is the default value for that property.  
+> In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `/reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  
   
 ## Example  
  This example shows how to use the [extern alias](../../../csharp/language-reference/keywords/extern-alias.md) feature.  
@@ -89,7 +89,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
   
  This sets up the external aliases "GridV1" and "GridV2," which you use in your program by means of an extern statement:  
   
-```  
+```csharp  
 extern alias GridV1;  
 extern alias GridV2;  
 // Using statements go here.  
@@ -97,16 +97,16 @@ extern alias GridV2;
   
  Once this is done, you can refer to the grid control from grid.dll by prefixing the control name with GridV1, like this:  
   
-```  
+```csharp  
 GridV1::Grid  
 ```  
   
  In addition, you can refer to the grid control from grid20.dll by prefixing the control name with GridV2 like this:  
   
-```  
+```csharp  
 GridV2::Grid   
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

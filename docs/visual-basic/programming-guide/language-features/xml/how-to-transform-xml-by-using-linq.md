@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], transforming XML"
 ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,7 +39,7 @@ translation.priority.ht:
   
  The example in this topic transforms content from an XML source document to HTML to be viewed in a browser.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To transform an XML document  
   

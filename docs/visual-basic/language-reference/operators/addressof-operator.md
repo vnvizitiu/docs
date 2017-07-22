@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "addresses, passing to API procedures"
 ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -43,7 +43,6 @@ Creates a procedure delegate instance that references the specific procedure.
 ## Syntax  
   
 ```  
-  
 AddressOf procedurename  
 ```  
   
@@ -70,4 +69,4 @@ AddressOf procedurename
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

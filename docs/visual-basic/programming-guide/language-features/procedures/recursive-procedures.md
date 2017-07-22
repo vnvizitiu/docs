@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "recursion"
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -40,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Recursive Procedures (Visual Basic)
-A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] code.  
+A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  
   
  The following procedure uses recursion to calculate the factorial of its original argument.  
   

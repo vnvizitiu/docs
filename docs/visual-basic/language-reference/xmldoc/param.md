@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "<param> XML tag"
 ms.assetid: 4e32e86f-f6f3-4301-b7fc-2f321fb54368
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,7 +39,7 @@ Defines a parameter name and description.
   
 ## Syntax  
   
-```  
+```xml  
 <param name="name">description</param>  
 ```  
   
@@ -55,9 +55,9 @@ Defines a parameter name and description.
   
  The text for the `<param>` tag will appear in the following locations:  
   
--   Parameter Info of IntelliSense. For more information, see [Using IntelliSense](https://docs.microsoft.com/visualstudio/ide/using-intellisense).  
+-   Parameter Info of IntelliSense. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense).  
   
--   Object Browser. For more information, see [Viewing the Structure of Code](https://docs.microsoft.com/visualstudio/ide/viewing-the-structure-of-code).  
+-   Object Browser. For more information, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
  Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   

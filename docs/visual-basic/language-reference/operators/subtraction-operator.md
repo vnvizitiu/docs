@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "minus operator [Visual Basic]"
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -52,7 +52,6 @@ Returns the difference between two numeric expressions or the negative value of 
 ## Syntax  
   
 ```  
-  
       expression1 – expression2  
 - or -  
 – expression1  

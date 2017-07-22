@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Async keyword [Visual Basic]"
 ms.assetid: 1be8b4b5-9689-41b5-bd33-b906bfd53bc5
 caps.latest.revision: 37
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -40,12 +40,11 @@ The `Async` modifier indicates that the method or [lambda expression](../../../v
  An async method provides a convenient way to do potentially long-running work without blocking the caller's thread. The caller of an async method can resume its work without waiting for the async method to finish.  
   
 > [!NOTE]
->  The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+>  The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md).  
   
  The following example shows the structure of an async method. By convention, async method names end in "Async."  
   
 ```vb  
-  
 Public Async Function ExampleMethodAsync() As Task(Of Integer)  
     ' . . .  
   
@@ -80,7 +79,6 @@ End Function
  The following examples show an async event handler, an async lambda expression, and an async method. For a full example that uses these elements, see [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the walkthrough code from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191).  
   
 ```vb  
-  
 ' An event handler must be a Sub procedure.  
 Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click  
     textBox1.Clear()  
@@ -123,11 +121,10 @@ Private Async Function GetURLContentsAsync(url As String) As Task(Of Byte())
     ' Return the result as a byte array.  
     Return content.ToArray()  
 End Function  
-  
 ```  
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>   
  [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)   
- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
+ [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)   
  [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)

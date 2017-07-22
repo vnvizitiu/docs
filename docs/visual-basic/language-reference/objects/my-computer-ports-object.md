@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Ports object"
 ms.assetid: 244ede4e-25b7-445b-9fd6-163550cce193
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -50,7 +50,7 @@ Provides a property and a method for accessing the computer's serial ports.
   
  **Class:** <xref:Microsoft.VisualBasic.Devices.Ports>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

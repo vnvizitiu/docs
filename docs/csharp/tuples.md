@@ -1,8 +1,8 @@
 ---
-title: Tuples | C# Guide
+title: Tuples - C# Guide | Microsoft Docs
 description: Learn about unnamed and named tuple types in C#
 keywords: .NET, .NET Core, C#
-author:  BillWagner
+author: BillWagner
 ms-author: wiwagn
 ms.date: 11/23/2016
 ms.topic: article
@@ -19,15 +19,26 @@ include a simpler syntax, rules for conversions based on number (referred to as 
 and types of fields, and
 consistent rules for copies and assignments. As a tradeoff, Tuples do not
 support some of the object oriented idioms associated with inheritance. You
-can get an overview in the section on [Tuples in the What's new in C# 7](csharp-7.md#tuples) topic.
+can get an overview in the section on [Tuples in the What's new in C# 7](whats-new/csharp-7.md#tuples) topic.
 
 In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017
-> RC and earlier preview releases, you must add the NuGet package "System.ValueTuple",
-> available in the pre-release stream.
+> The new tuples features require the @System.ValueTuple types.
+> You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
+> on platforms that do not include the types.
+>
+> This is similar to other language features that rely on types
+> delivered in the framework. Examples include `async` and `await`
+> relying on the `INotifyCompletion` interface, and LINQ relying
+> on `IEnumerable<T>`. However, the delivery mechanism is changing
+> as .NET is becoming more platform independent. The .NET Framework
+> may not always ship on the same cadence as the language compiler. When new language
+> features rely on new types, those types will be available as NuGet packages when
+> the language features ship. As these new types get added to the .NET Standard
+> API and delivered as part of the framework, the NuGet package requirement will
+> be removed.
 
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
@@ -67,7 +78,7 @@ Tuples are both simpler and more flexible data containers than `class` and
 ## Named and unnamed tuples
 
 The `ValueTuple` struct has fields named `Item1`, `Item2`, `Item3` and so on,
-similer to the properties defined in the existing `Tuple` types.
+similar to the properties defined in the existing `Tuple` types.
 These names are the only names you can use for *unnamed tuples*. When you
 do not provide any alternative field names to a tuple, you've created an
 unnamed tuple:
@@ -99,7 +110,7 @@ the fields in the Tuple.
 
 > [!NOTE]
 > Development Tools, such as Visual Studio, also read that metadata,
-> and provide intellisense and other features using the metadata
+> and provide IntelliSense and other features using the metadata
 > field names.
 
 It is important to understand these underlying fundamentals of
@@ -109,8 +120,8 @@ the rules for assigning named tuples to each other.
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
-the same number of fields and the same types for each of those
-fields. Those types must be exact compile-time matches. Other
+the same number of fields and implicit conversions for the types for each of those
+fields. Other
 conversions are not considered for assignments. Let's look at the kinds
 of assignments that are allowed between tuple types.
 
@@ -173,7 +184,7 @@ and the sum of the each value squared:
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
-Ths version enumerates the sequence exactly once. But, it's not very
+This version enumerates the sequence exactly once. But, it's not very
 reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
 the sum of the sequence, and the sum 
@@ -264,7 +275,7 @@ work with the results.
 
 ## Deconstruction
 
-You can unpackage all the items in a tuple by *deconstructng* the tuple
+You can unpackage all the items in a tuple by *deconstructing* the tuple
 returned by a method. There are two different approaches to deconstructing
 tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the fields in the tuple:
@@ -286,7 +297,7 @@ Note that you cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.
 
-### Deconstring user defined types
+### Deconstructing user defined types
 
 Any tuple type can be deconstructed as shown above. It's also easy
 to enable deconstruction on any user defined type (classes, structs, or 
@@ -318,7 +329,7 @@ the `FirstName`, the `LastName` and the `GPA`:
 A `Student` object now has two accessible `Deconstruct` methods: the extension method
 declared for `Student` types, and the member of the `Person` type. Both are in scope,
 and that enables a `Student` to be deconstructed into either two variables or three.
-If you assign a student to three variabless, the first name, last name, and GPA are
+If you assign a student to three variables, the first name, last name, and GPA are
 all returned. If you assign a student to two variables, only the first name and 
 the last name are returned.
 
@@ -329,7 +340,7 @@ class or a class hierarchy. Multiple `Deconstruct` methods that have the
 same number of `out` parameters can quickly cause ambiguities. Callers may
 not be able to easily call the desired `Deconstruct` method.
 
-In this example, there is minimal chance for an ambiguious call because the 
+In this example, there is minimal chance for an ambiguous call because the 
 `Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
 

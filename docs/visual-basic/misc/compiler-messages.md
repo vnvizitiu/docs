@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "errors [Visual Basic], compiler"
 ms.assetid: d50addfb-0683-45e5-8c3c-69a2eb510a19
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -34,4 +34,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Visual Basic Compiler Messages
-This section contains the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] error messages that occur at compile time.
+This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at compile time.

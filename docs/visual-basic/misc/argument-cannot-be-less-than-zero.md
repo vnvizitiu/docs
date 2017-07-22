@@ -11,8 +11,8 @@ ms.technology:
 ms.topic: "article"
 ms.assetid: ce004a9a-5fb5-4aa9-8717-63bdc101a639
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -38,4 +38,4 @@ A value that is less than zero has been supplied, but the argument cannot be les
 -   Check how the value in question is calculated, to make sure it is correct.  
   
 ## See Also  
- [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

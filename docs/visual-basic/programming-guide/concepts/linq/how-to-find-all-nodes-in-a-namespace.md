@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find All Nodes in a Namespace (Visual Basic)
@@ -49,7 +49,6 @@ Module Module1
         Next  
     End Sub  
 End Module  
-  
 ```  
   
  This code produces the following output:  
@@ -80,7 +79,6 @@ Module Module1
         Console.WriteLine(newTree)  
     End Sub  
 End Module  
-  
 ```  
   
  This code produces the following output:  

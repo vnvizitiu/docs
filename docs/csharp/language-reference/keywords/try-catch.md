@@ -43,7 +43,7 @@ The try-catch statement consists of a `try` block followed by one or more `catch
   
  The `try` block contains the guarded code that may cause the exception. The block is executed until an exception is thrown or it is completed successfully. For example, the following attempt to cast a `null` object raises the <xref:System.NullReferenceException> exception:  
   
-```cs  
+```csharp  
 object o2 = null;  
 try  
 {  
@@ -53,7 +53,7 @@ try
   
  Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=fullName> For example:  
   
-```cs  
+```csharp  
 catch (InvalidCastException e)   
 {  
 }  
@@ -63,8 +63,8 @@ catch (InvalidCastException e)
   
  Using `catch` arguments is one way to filter for the exceptions you want to handle.  You can also use a predicate expression that further examines the exception to decide whether to handle it.  If the predicate expression returns false, then the search for a handler continues.  
   
-```cs  
-catch (ArgumentException e) when (e.ParamName == “…”)  
+```csharp  
+catch (ArgumentException e) when (e.ParamName == "…")  
 {  
 }  
 ```  
@@ -73,16 +73,16 @@ catch (ArgumentException e) when (e.ParamName == “…”)
   
  A [throw](../../../csharp/language-reference/keywords/throw.md) statement can be used in a `catch` block to re-throw the exception that is caught by the `catch` statement. The following example extracts source information from an <xref:System.IO.IOException> exception, and then throws the exception to the parent method.  
   
-```cs  
+```csharp  
 catch (FileNotFoundException e)  
 {  
-    // FileNotFoundExceptions are handled here.  
+    // FileNotFoundExceptions are handled here.  
 }  
 catch (IOException e)  
 {  
     // Extract some information from this exception, and then   
     // throw it to the parent method.  
-    whenDo not initialize (e.Source != null)  
+    if (e.Source != null)  
         Console.WriteLine("IOException source: {0}", e.Source);  
     throw;  
 }  
@@ -90,7 +90,7 @@ catch (IOException e)
   
  You can catch one exception and throw a different exception. When you do this, specify the exception that you caught as the inner exception, as shown in the following example.  
   
-```cs  
+```csharp  
 catch (InvalidCastException e)   
 {  
     // Perform some action here, and then throw a new exception.  
@@ -100,8 +100,7 @@ catch (InvalidCastException e)
   
  You can also re-throw an exception when a specified condition is true, as shown in the following example.  
   
-```cs  
-  
+```csharp  
 catch (InvalidCastException e)  
 {  
     if (e.Data == null)  
@@ -117,7 +116,7 @@ catch (InvalidCastException e)
   
  From inside a `try` block, initialize only variables that are declared therein. Otherwise, an exception can occur before the execution of the block is completed. For example, in the following code example, the variable `n` is initialized inside the `try` block. An attempt to use this variable outside the `try` block in the `Write(n)` statement will generate a compiler error.  
   
-```cs  
+```csharp  
 static void Main()   
 {  
     int n;  
@@ -139,7 +138,7 @@ static void Main()
 ## Exceptions in Async Methods  
  An async method is marked  by an  [async](../../../csharp/language-reference/keywords/async.md) modifier and usually contains one or more await expressions or statements. An await expression applies the [await](../../../csharp/language-reference/keywords/await.md) operator to a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.  
   
- When control reaches an `await` in the async method, progress in the method is suspended until the awaited task completes. When the task  is complete, execution can resume in the method. For more information, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md) and [Control Flow in Async Programs](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md).  
+ When control reaches an `await` in the async method, progress in the method is suspended until the awaited task completes. When the task  is complete, execution can resume in the method. For more information, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md) and [Control Flow in Async Programs](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md).  
   
  The completed task to which `await` is applied might be in a faulted state because of an unhandled exception in the method that returns the task. Awaiting the task throws an exception. A task can also end up in a canceled state if the asynchronous process that returns it is canceled. Awaiting a canceled task throws  an `OperationCanceledException`. For more information about how to cancel an asynchronous process, see [Fine-Tuning Your Async Application](http://msdn.microsoft.com/library/daaa32ea-c84c-4761-8230-c8292ffebd74).  
   
@@ -178,13 +177,13 @@ static void Main()
  [!code-cs[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_4.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [try, throw, and catch Statements (C++)](https://docs.microsoft.com/cpp/cpp/try-throw-and-catch-statements-cpp)   
+ [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)   
  [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   

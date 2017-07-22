@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "type conversion, keywords"
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -38,7 +38,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Conversion Summary (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

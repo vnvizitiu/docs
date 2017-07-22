@@ -1,6 +1,6 @@
 ---
-title: .NET Core Versioning
-description: .NET Core Versioning
+title: .NET Core Versioning | Microsoft Docs
+description: Learn about the versioning scheme for .NET Core.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -77,7 +77,7 @@ There are two primary metapackages for .NET Core.
 
 - v1.6 as of .NET Core 1.0 (these versions won't typically or intentionally match).
 - Maps to the `netstandard` framework. 
-- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a [.NET Standard](../../standard/library.md) platform.
+- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a [.NET Standard](../../standard/net-standard.md) platform.
 
 **Microsoft.NETCore.App**
 
@@ -109,7 +109,7 @@ After shipping a .NET Core v1.0.0 stable version, patch-level changes (no new AP
 
 You can see patch updates demonstrated in the project.json examples below.
 
-```
+```json
 {
   "dependencies": {
     "Microsoft.NETCore.App": "1.0.1"
@@ -124,32 +124,26 @@ You can see patch updates demonstrated in the project.json examples below.
 
 After shipping a .NET Core v1.0.0 stable version, new APIs are added to .NET Core libraries to enable new scenarios. The various metapackages are updated to reference the updated .NET Core library packages. The metapackages are versioned as patch updates (x.y) to match the higher framework version. The various frameworks are updated to describe the new APIs. A new .NET Core distribution is released with a matching version number to the `Microsoft.NETCore.App` metapackage.
 
-You can see minor updates demonstrated in the project.json examples below.
+You can see minor updates demonstrated in the following project file:
 
-```
-{
-  "dependencies": {
-    "Microsoft.NETCore.App": "1.1.0"
-  },
-  "frameworks": {
-    "netcoreapp1.1": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+</Project>
 ```
 
 ### Shipping a major release
 
 Given a .NET Core v1.y.z stable version, new APIs are added to .NET Core libraries to enable major new scenarios. Perhaps, support is dropped for a platform. The various metapackages are updated to reference the updated .NET Core library packages. The `Microsoft.NETCore.App` metapackage and the `netcore` framework are versioned as a major update (x.). The `NETStandard.Library` metapackage is likely  versioned as a minor update (x.y) since it applies to multiple .NET implementations. A new .NET Core distribution would be released with a matching version number to the `Microsoft.NETCore.App` metapackage.
 
-You can see major updates demonstrated in the project.json metapackage reference in the example below.
+You can see major updates demonstrated in the following project file. (Note that `netcoreapp2.0` has not been released.)
 
-```
-{
-  "dependencies": {
-    "Microsoft.NETCore.App": "2.0.0"
-  },
-  "frameworks": {
-    "netcoreapp2.0": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
 ```

@@ -1,8 +1,8 @@
 ---
-title: "Perform a subquery on a grouping operation"
+title: Perform a subquery on a grouping operation | Microsoft Docs
 description: How to perform a subquery on a grouping operation.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

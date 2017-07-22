@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "expressions [Visual Basic], lambda"
 ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -122,7 +122,7 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
   
  [!code-vb[VbVbalrLambdas#10](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_10.vb)]  
   
- The previous example is equivalent to the following code, which is written in [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)] syntax:  
+ The previous example is equivalent to the following code, which is written in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] syntax:  
   
  [!code-vb[VbVbalrLambdas#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_11.vb)]  
   
@@ -131,7 +131,7 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
  [Lambda Expressions](./lambda-expressions.md)   
  [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)   
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

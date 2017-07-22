@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "modules, Visual Basic"
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Modules (Visual Basic)
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 |||  
 |---|---|  

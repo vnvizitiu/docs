@@ -1,5 +1,5 @@
 ---
-title: "-optioncompare | Microsoft Docs"
+title: "/optioncompare | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "/optioncompare compiler option [Visual Basic]"
 ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -83,4 +83,4 @@ vbc /optioncompare:binary projFile.vb
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

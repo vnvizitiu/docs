@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC42326"
 ms.assetid: 63214dc6-0112-4245-8ebf-7c9e8f5a5782
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -76,7 +76,7 @@ Module Module1
 End Module  
 ```  
   
- By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42326  
   
@@ -109,4 +109,4 @@ End Module
 ## See Also  
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

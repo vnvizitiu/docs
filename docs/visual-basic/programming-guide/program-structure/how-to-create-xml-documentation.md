@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XML documentation, creating"
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -37,7 +37,7 @@ translation.priority.ht:
 # How to: Create XML Documentation in Visual Basic
 This example shows how to add XML documentation comments to your code.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To create XML documentation for a type or member  
   

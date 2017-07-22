@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "scrollable form, printing"
 ms.assetid: 1196e1cf-b77f-4928-a3e4-85b51ba3787d
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -46,7 +46,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
   
      The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component will be added to the component tray.  
   
-2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction>.  
+2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction.PrintToPrinter>.  
   
 3.  Add the following code in the appropriate event handler (for example, in the `Click` event handler for a **Print**`Button`).  
   

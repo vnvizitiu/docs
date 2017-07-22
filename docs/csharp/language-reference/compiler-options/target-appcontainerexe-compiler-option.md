@@ -28,18 +28,18 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # /target:appcontainerexe (C# Compiler Options)
-If you use the **/target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) but is designed for [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] apps.  
+If you use the **/target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) but is designed for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
   
 ## Syntax  
   
-```  
+```console  
 /target:appcontainerexe  
 ```  
   
 ## Remarks  
  To require the app to run in an app container, this option sets a bit in the [Portable Executable](http://go.microsoft.com/fwlink/p/?LinkId=236960) (PE) file. When that bit is set, an error occurs if the CreateProcess method tries to launch the executable file outside an app container.  
   
- Unless you use the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the input file that contains the [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method.  
+ Unless you use the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the input file that contains the [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method.  
   
  When you specify this option at a command prompt, all files until the next **/out** or **/target** option are used to create the executable file.  
   
@@ -49,14 +49,14 @@ If you use the **/target:appcontainerexe** compiler option, the compiler creates
   
 2.  On the **Application** tab, in the **Output type** list, choose **Windows Store App**.  
   
-     This option is available only for [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] app templates.  
+     This option is available only for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app templates.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
  The following command compiles `filename.cs` into a Windows executable file that can be run only in an app container.  
   
-```  
+```console  
 csc /target:appcontainerexe filename.cs  
 ```  
   

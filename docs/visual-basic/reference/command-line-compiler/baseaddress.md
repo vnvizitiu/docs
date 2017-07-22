@@ -1,5 +1,5 @@
 ---
-title: "-baseaddress | Microsoft Docs"
+title: "/baseaddress | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "baseaddress compiler option [Visual Basic]"
 ms.assetid: c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -54,7 +54,7 @@ Specifies a default base address when creating a DLL.
 |`address`|Required. The base address for the DLL. This address must be specified as a hexadecimal number.|  
   
 ## Remarks  
- The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
+ The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
  Be aware that the lower-order word in this address is rounded. For example, if you specify 0x11110001, it is rounded to 0x11110000.  
   

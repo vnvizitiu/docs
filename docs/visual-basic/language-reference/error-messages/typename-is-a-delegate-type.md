@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC32008"
 ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -54,5 +54,5 @@ translation.priority.ht:
 ## See Also  
  [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Invoke a Delegate Method](../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)

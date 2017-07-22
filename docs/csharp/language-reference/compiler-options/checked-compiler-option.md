@@ -37,7 +37,7 @@ The **/checked** option specifies whether an integer arithmetic statement that r
   
 ## Syntax  
   
-```  
+```console  
 /checked[+ | -]  
 ```  
   
@@ -50,7 +50,7 @@ The **/checked** option specifies whether an integer arithmetic statement that r
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
 2.  Click the **Build** property page.  
   
@@ -63,11 +63,11 @@ The **/checked** option specifies whether an integer arithmetic statement that r
 ## Example  
  The following command compiles `t2.cs`. The use of `/checked` in the command specifies that any integer arithmetic statement in the file that is not in the scope of a `checked` or `unchecked` keyword, and that results in a value that is outside the range of the data type, causes an exception at run time.  
   
-```  
+```console  
 csc t2.cs /checked  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
  [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)

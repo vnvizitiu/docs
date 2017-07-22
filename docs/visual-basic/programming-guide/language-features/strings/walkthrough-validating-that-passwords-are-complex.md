@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Validating That Passwords Are Complex (Visual Basic) | Microsoft Docs"
+title: "Validating Passwords Complexity (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "String data type, validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

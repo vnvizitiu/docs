@@ -26,10 +26,8 @@ translation.priority.mt:
 When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [from clause](../../../../csharp/language-reference/keywords/from-clause.md)should look like this:  
   
 ```  
-  
 var query = from Student s in arrList  
 ...  
-  
 ```  
   
  By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.  
@@ -39,7 +37,7 @@ var query = from Student s in arrList
 ## Example  
  The following example shows a simple query over an <xref:System.Collections.ArrayList>. Note that this example uses object initializers when the code calls the <xref:System.Collections.ArrayList.Add%2A> method, but this is not a requirement.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections;  
 using System.Linq;  

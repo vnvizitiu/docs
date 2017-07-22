@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID51"
 ms.assetid: 21266dbb-f4a1-4c5d-a646-27909cf53248
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Internal error (Visual Basic)
-An internal malfunction has occurred in [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+An internal malfunction has occurred in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## To correct this error  
   

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30577"
 ms.assetid: c2c55640-5c61-4e66-97a4-4322020c6001
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -53,4 +53,4 @@ The `AddressOf` operator creates a procedure delegate instance that references a
   
 ## See Also  
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

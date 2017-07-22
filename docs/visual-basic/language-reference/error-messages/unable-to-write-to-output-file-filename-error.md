@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC31019"
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -55,11 +55,11 @@ There was a problem creating the file.
   
 1.  Compile the program again to see if the error recurs.  
   
-2.  If the error continues, save your work and restart [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+2.  If the error continues, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 3.  If the error continues, restart the computer.  
   
-4.  If the error recurs, reinstall [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+4.  If the error recurs, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 5.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
@@ -80,4 +80,4 @@ There was a problem creating the file.
 3.  Press **OK**.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

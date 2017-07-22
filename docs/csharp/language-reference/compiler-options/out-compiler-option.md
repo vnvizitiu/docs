@@ -37,7 +37,7 @@ The **/out** option specifies the name of the output file.
   
 ## Syntax  
   
-```  
+```console  
 /out:filename  
 ```  
   
@@ -77,11 +77,11 @@ The **/out** option specifies the name of the output file.
 ## Example  
  Compile `t.cs` and create output file `t.exe`, as well as build `t2.cs` and create module output file `mymodule.netmodule`:  
   
-```  
+```console  
 csc t.cs /out:mymodule.netmodule /target:module t2.cs  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

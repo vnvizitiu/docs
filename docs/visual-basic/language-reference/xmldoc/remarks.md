@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "remarks XML tag"
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,7 +39,7 @@ Specifies a remarks section for the member.
   
 ## Syntax  
   
-```  
+```xml  
 <remarks>description</remarks>  
 ```  
   
@@ -50,7 +50,7 @@ Specifies a remarks section for the member.
 ## Remarks  
  Use the `<remarks>` tag to add information about a type, supplementing the information specified with [\<summary>](../../../visual-basic/language-reference/xmldoc/summary.md).  
   
- This information appears in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](https://docs.microsoft.com/visualstudio/ide/viewing-the-structure-of-code).  
+ This information appears in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
  Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   

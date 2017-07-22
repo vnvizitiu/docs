@@ -37,7 +37,7 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
   
 ## Syntax  
   
-```  
+```console  
 /win32icon:filename  
 ```  
   
@@ -63,10 +63,10 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
 ## Example  
  Compile `in.cs` and attach an .ico file `rf.ico` to produce `in.exe`:  
   
-```  
+```console  
 csc /win32icon:rf.ico in.cs  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

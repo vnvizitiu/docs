@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "#Region keyword"
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -45,7 +45,6 @@ Collapses and hides sections of code in Visual Basic files.
 ## Syntax  
   
 ```  
-  
       #Region "identifier_string"  
 #End Region  
 ```  
@@ -67,5 +66,5 @@ Collapses and hides sections of code in Visual Basic files.
   
 ## See Also  
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining)   
+ [Outlining](/visualstudio/ide/outlining)   
  [How to: Collapse and Hide Sections of Code](../../../visual-basic/programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)

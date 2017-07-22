@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "type inference [Visual Basic]"
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
 caps.latest.revision: 43
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -84,18 +84,18 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  `Option Infer Off`  
   
- If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. For projects upgraded from [!INCLUDE[vb_orcas_long](../../../../visual-basic/misc/includes/vb_orcas_long_md.md)] or earlier, the compiler default is `Option Infer Off`.  
+ If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. For projects upgraded from [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)] or earlier, the compiler default is `Option Infer Off`.  
   
  If the value set for `Option Infer` in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.  
   
- For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+ For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Restrictions  
  Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.  
   
 ## See Also  
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
  [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)   
  [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)   

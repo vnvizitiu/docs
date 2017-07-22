@@ -1,5 +1,5 @@
 ---
-title: "-quiet | Microsoft Docs"
+title: "/quiet | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "quiet compiler option [Visual Basic]"
 ms.assetid: 5d77fa23-4c50-4708-8535-649912b098e8
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)
@@ -47,7 +47,6 @@ If DirectCast(n, Object) = DirectCast(r1.Name, Object) Then
 Else  
 	Console.WriteLine("Different")  
 End If  
-  
 ```  
   
  This example produces the following output:  
@@ -73,7 +72,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <C1>1</C1>  
 <C1>1</C1>  
 ```  

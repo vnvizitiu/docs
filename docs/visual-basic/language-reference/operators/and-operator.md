@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "bitwise comparison"
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -48,7 +48,6 @@ Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjun
 ## Syntax  
   
 ```  
-  
 result = expression1 And expression2  
 ```  
   

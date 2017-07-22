@@ -1,3 +1,7 @@
+---
+redirect_url: /dotnet/fsharp/index
+---
+
 # F# Tutorials
 
 > [!NOTE]

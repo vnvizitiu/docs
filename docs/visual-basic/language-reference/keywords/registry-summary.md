@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "registry, Visual Basic"
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Registry Summary (Visual Basic)
-[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature provides you with greater productivity and performance in registry operations than these elements. For more information, see <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>.  
   

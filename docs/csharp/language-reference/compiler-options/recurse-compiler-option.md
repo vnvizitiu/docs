@@ -37,7 +37,7 @@ The /recurse option enables you to compile source code files in all child direct
   
 ## Syntax  
   
-```  
+```console  
 /recurse:[dir\]file  
 ```  
   
@@ -58,16 +58,16 @@ The /recurse option enables you to compile source code files in all child direct
 ## Example  
  Compiles all C# files in the current directory:  
   
-```  
+```console  
 csc *.cs  
 ```  
   
  Compiles all of the C# files in the dir1\dir2 directory and any directories below it and generates dir2.dll:  
   
-```  
+```console  
 csc /target:library /out:dir2.dll /recurse:dir1\dir2\*.cs  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

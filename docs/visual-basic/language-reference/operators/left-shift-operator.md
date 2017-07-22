@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "operator <<, Visual Basic left shift operator"
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -43,7 +43,6 @@ Performs an arithmetic left shift on a bit pattern.
 ## Syntax  
   
 ```  
-  
 result = pattern << amount  
 ```  
   

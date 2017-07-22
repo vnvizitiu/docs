@@ -1,5 +1,5 @@
 ---
-title: "-main | Microsoft Docs"
+title: "/main | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-main compiler option [Visual Basic]"
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

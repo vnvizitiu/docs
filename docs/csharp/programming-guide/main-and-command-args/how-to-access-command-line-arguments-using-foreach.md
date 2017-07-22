@@ -37,7 +37,7 @@ translation.priority.ht:
 Another approach to iterating over the array is to use the [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement as shown in this example. The `foreach` statement can be used to iterate over an array, a .NET Framework collection class, or any class or struct that implements the <xref:System.Collections.IEnumerable> interface.  
   
 > [!NOTE]
->  When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer).  
+>  When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
   
 ## Example  
  This example demonstrates how to print out the command line arguments using `foreach`.  
@@ -52,6 +52,6 @@ Another approach to iterating over the array is to use the [foreach](../../../cs
  [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)   
+ [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
  [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)   
  [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30969"
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -42,7 +42,7 @@ An expression uses a type, such as a class, structure, interface, enumeration, o
   
  The cited projects produce assemblies with the same name. Therefore, the compiler cannot determine which assembly to use for the type you are accessing.  
   
- To access a type defined in another assembly, the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler must have a reference to that assembly. This must be a single, unambiguous reference that does not cause circular references among projects.  
+ To access a type defined in another assembly, the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler must have a reference to that assembly. This must be a single, unambiguous reference that does not cause circular references among projects.  
   
  **Error ID:** BC30969  
   
@@ -53,8 +53,8 @@ An expression uses a type, such as a class, structure, interface, enumeration, o
 2.  In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
   
 ## See Also  
- [Managing references in a project](https://docs.microsoft.com/visualstudio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
- [Troubleshooting Broken References](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
+ [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

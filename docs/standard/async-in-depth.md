@@ -1,5 +1,5 @@
 ---
-title: Async in depth
+title: Async in depth | Microsoft Docs
 description: In-depth explanation of how asynchronous code works in .NET
 keywords: .NET, .NET Core, .NET Standard
 author: cartermp
@@ -14,7 +14,7 @@ ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 
 # Async in depth
 
-Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` language keywords. This article explains how to use .NET async and provides insight into the async framework used under the covers.
+Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` keywords in C# and Visual Basic. (Language-specific resources are found in the [See also](#see-also) section.) This article explains how to use .NET async and provides insight into the async framework used under the covers.
 
 ## Task and Task&lt;T&gt;
 
@@ -27,9 +27,9 @@ It’s important to reason about tasks as abstractions of work happening asynchr
 
 Tasks expose an API protocol for monitoring, waiting upon and accessing the result value (in the case of `Task<T>`) of a task. Language integration, with the `await` keyword, provides a higher-level abstraction for using tasks. 
 
-Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally “unwrap” the value returned when the Task is complete.  The details of how this works are explained further below.
+Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally "unwrap" the value returned when the Task is complete.  The details of how this works are explained further below.
 
-You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP) Article](https://msdn.microsoft.com/library/hh873175.aspx).
+You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP)](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) topic.
 
 ## Deeper Dive into Tasks for an I/O-Bound Operation
 
@@ -47,7 +47,7 @@ public Task<string> GetHtmlAsync()
 }
 ```
 
-The second example adds the use of he `async` and `await` keywords to operate on the task.
+The second example adds the use of the `async` and `await` keywords to operate on the task.
 
 ```csharp
 public async Task<string> GetFirstCharactersCountAsync(string url, int count)
@@ -83,7 +83,7 @@ For example, in Windows an OS thread makes a call to the network device driver a
 
 When the request is fulfilled and data comes back through the device driver, it notifies the CPU of new data received via an interrupt.  How this interrupt gets handled will vary depending on the OS, but eventually the data will be passed through the OS until it reaches a system interop call (for example, in Linux an interrupt handler will schedule the bottom half of the IRQ to pass the data up through the OS asynchronously).  Note that this *also* happens asynchronously!  The result is queued up until the next available thread is able execute the async method and "unwrap" the result of the completed task.
 
-Throughout this entire process, a key takeaway is that **no thread is dedicated to running the task**.  Although work is executed in some context (i.e. the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
+Throughout this entire process, a key takeaway is that **no thread is dedicated to running the task**.  Although work is executed in some context (that is, the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
 
 Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it’s miniscule compared to the time it takes to do the actual I/O work. Although not at all precise, a potential timeline for such a call would look like this:
 
@@ -142,3 +142,9 @@ Once `await` is encountered, the execution of `CalculateResult()` is yielded to 
 ### Why does async help here?
 
 `async` and `await` are the best practice managing CPU-bound work when you need responsiveness. There are multiple patterns for using async with CPU-bound work. It's important to note that there is a small cost to using async and it's not recommended for tight loops.  It's up to you to determine how you write your code around this new capability.
+
+## See also
+
+[Asynchronous programming in C#](~/docs/csharp/async.md)   
+[Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
+[Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)

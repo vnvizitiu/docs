@@ -36,12 +36,63 @@ When you have to process large XML files, it might not be feasible to load the w
  The topic [How to: Perform Streaming Transform of Large XML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.  
   
 ## Example  
- This example creates a custom axis method. You can query it by using a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
+ This example creates a custom axis method. You can query it by using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```csharp  
+static IEnumerable<XElement> StreamRootChildDoc(StringReader stringReader)  
+{  
+    using (XmlReader reader = XmlReader.Create(stringReader))  
+    {  
+        reader.MoveToContent();  
+        // Parse the file and display each of the nodes.  
+        while (reader.Read())  
+        {  
+            switch (reader.NodeType)  
+            {  
+                case XmlNodeType.Element:  
+                    if (reader.Name == "Child") {  
+                        XElement el = XElement.ReadFrom(reader) as XElement;  
+                        if (el != null)  
+                            yield return el;  
+                    }  
+                    break;  
+            }  
+        }  
+    }  
+}  
+  
+static void Main(string[] args)  
+{  
+    string markup = @"<Root>  
+      <Child Key=""01"">  
+        <GrandChild>aaa</GrandChild>  
+      </Child>  
+      <Child Key=""02"">  
+        <GrandChild>bbb</GrandChild>  
+      </Child>  
+      <Child Key=""03"">  
+        <GrandChild>ccc</GrandChild>  
+      </Child>  
+    </Root>";  
+  
+    IEnumerable<string> grandChildData =  
+        from el in StreamRootChildDoc(new StringReader(markup))  
+        where (int)el.Attribute("Key") > 1  
+        select (string)el.Element("GrandChild");  
+  
+    foreach (string str in grandChildData) {  
+        Console.WriteLine(str);  
+    }  
+}  
+```  
+  
  This example produces the following output:  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```  
+bbb  
+ccc  
+```  
+  
  In this example, the source document is very small. However, even if there were millions of `Child` elements, this example would still have a small memory footprint.  
   
 ## See Also  

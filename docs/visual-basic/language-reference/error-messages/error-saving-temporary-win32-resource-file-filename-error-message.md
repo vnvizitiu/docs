@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30137"
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Error saving temporary Win32 resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;
-The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker reported an error obtaining a file name for use in writing an in-memory resource.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker reported an error obtaining a file name for use in writing an in-memory resource.  
   
  **Error ID:** BC30137  
   
@@ -50,4 +50,4 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
 ## See Also  
  [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   
  [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

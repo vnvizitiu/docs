@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], type"
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -56,7 +56,7 @@ A class that takes *type parameters* is called a *generic class*. If you are usi
   
  In addition to classes, you can also define and use generic structures, interfaces, procedures, and delegates.  
   
- The following procedure takes a generic class defined in the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] and creates an instance from it.  
+ The following procedure takes a generic class defined in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] and creates an instance from it.  
   
 ### To use a class that takes a type parameter  
   

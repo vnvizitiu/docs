@@ -1,8 +1,8 @@
 ---
-title: "Group query results"
+title: Group query results | Microsoft Docs
 description: How to group results.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

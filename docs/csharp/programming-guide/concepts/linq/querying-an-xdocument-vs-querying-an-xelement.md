@@ -21,11 +21,11 @@ ms.author: "wiwagn"
 When you load a document via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=fullName>, you will notice that you have to write queries slightly differently than when you load via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=fullName>.  
   
 ## Comparison of XDocument.Load and XElement.Load  
- When you load an XML document into an <xref:System.Xml.Linq.XElement> via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=fullName>, the <xref:System.Xml.Linq.XElement> at the root of the XML tree contains the root element of the loaded document. However, when you load the same XML document into an <xref:System.Xml.Linq.XDocument> via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=fullName>, the root of the tree is an <xref:System.Xml.Linq.XDocument> node, and the root element of the loaded document is the one allowed child <xref:System.Xml.Linq.XElement> node of the <xref:System.Xml.Linq.XDocument>. The [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] axes operate relative to the root node.  
+ When you load an XML document into an <xref:System.Xml.Linq.XElement> via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=fullName>, the <xref:System.Xml.Linq.XElement> at the root of the XML tree contains the root element of the loaded document. However, when you load the same XML document into an <xref:System.Xml.Linq.XDocument> via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=fullName>, the root of the tree is an <xref:System.Xml.Linq.XDocument> node, and the root element of the loaded document is the one allowed child <xref:System.Xml.Linq.XElement> node of the <xref:System.Xml.Linq.XDocument>. The [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] axes operate relative to the root node.  
   
  This first example loads an XML tree using <xref:System.Xml.Linq.XElement.Load%2A>. It then queries for the child elements of the root of the tree.  
   
-```cs  
+```csharp  
 // Create a simple document and write it to a file  
 File.WriteAllText("Test.xml", @"<Root>  
     <Child1>1</Child1>  
@@ -55,7 +55,7 @@ Querying tree loaded with XElement.Load
   
  The following example is the same as the one above, with the exception that the XML tree is loaded into an <xref:System.Xml.Linq.XDocument> instead of an <xref:System.Xml.Linq.XElement>.  
   
-```cs  
+```csharp  
 // Create a simple document and write it to a file  
 File.WriteAllText("Test.xml", @"<Root>  
     <Child1>1</Child1>  
@@ -89,7 +89,7 @@ Querying tree loaded with XDocument.Load
   
  One approach to dealing with this is to use the <xref:System.Xml.Linq.XDocument.Root%2A> property before accessing the axes methods, as follows:  
   
-```cs  
+```csharp  
 // Create a simple document and write it to a file  
 File.WriteAllText("Test.xml", @"<Root>  
     <Child1>1</Child1>  

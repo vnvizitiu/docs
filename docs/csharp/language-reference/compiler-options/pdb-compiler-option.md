@@ -37,7 +37,7 @@ The **/pdb** compiler option specifies the name and location of the debug symbol
   
 ## Syntax  
   
-```  
+```console  
 /pdb:filename  
 ```  
   
@@ -55,10 +55,10 @@ The **/pdb** compiler option specifies the name and location of the debug symbol
 ## Example  
  Compile `t.cs` and create a .pdb file called tt.pdb:  
   
-```  
+```console  
 csc /debug /pdb:tt t.cs  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

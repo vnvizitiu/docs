@@ -15,8 +15,8 @@ dev_langs:
   - "VB"
 ms.assetid: d985bb7e-e48e-443e-86f2-ddb86758757c
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -44,4 +44,4 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

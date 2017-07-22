@@ -1,5 +1,5 @@
 ---
-title: "-utf8output (Visual Basic) | Microsoft Docs"
+title: "/utf8output (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "/utf8output compiler option [Visual Basic]"
 ms.assetid: 8ab36b1e-027a-49ac-85b4-f48997d9e4d6
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

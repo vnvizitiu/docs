@@ -1,5 +1,5 @@
 ---
-title: Source Line, File, and Path Identifiers (F#)
+title: Source Line, File, and Path Identifiers (F#) | Microsoft Docs
 description: Source Line, File, and Path Identifiers (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -47,8 +47,8 @@ Output:
 
 ```
 Line: 4
-Source Directory: C:\Users\username\Documents\Visual Studio 2010\Projects\SourceInfo\SourceInfo
-Source File: C:\Users\username\Documents\Visual Studio 2010\Projects\SourceInfo\SourceInfo\Program.fs
+Source Directory: C:\Users\username\Documents\Visual Studio 2017\Projects\SourceInfo\SourceInfo
+Source File: C:\Users\username\Documents\Visual Studio 2017\Projects\SourceInfo\SourceInfo\Program.fs
 ```
 
 ## See Also

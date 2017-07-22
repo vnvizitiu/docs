@@ -37,7 +37,7 @@ This option specifies the class that contains the entry point to the program, if
   
 ## Syntax  
   
-```  
+```console  
 /main:class  
 ```  
   
@@ -46,7 +46,7 @@ This option specifies the class that contains the entry point to the program, if
  The type that contains the **Main** method.  
   
 ## Remarks  
- If your compilation includes more than one type with a [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.  
+ If your compilation includes more than one type with a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.  
   
  This option is for use when compiling an .exe file.  
   
@@ -63,10 +63,10 @@ This option specifies the class that contains the entry point to the program, if
 ## Example  
  Compile `t2.cs` and `t3.cs`, specifying that the **Main** method will be found in `Test2`:  
   
-```  
+```console  
 csc t2.cs t3.cs /main:Test2  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

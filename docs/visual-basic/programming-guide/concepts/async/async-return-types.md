@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Async Return Types (Visual Basic)
-Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md).  
   
  Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
@@ -124,7 +124,16 @@ Await Task_MethodAsync()
   
  The following code separates calling `Task_MethodAsync` from awaiting the task that `Task_MethodAsync` returns.  
   
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```vb  
+' Call and await in separate statements.  
+Dim simpleTask As Task = Task_MethodAsync()  
+  
+' You can do other work that does not rely on simpleTask before awaiting.  
+textBox1.Text &= String.Format(vbCrLf & "Application can continue working while the Task runs. . . ." & vbCrLf)  
+  
+Await simpleTask  
+```  
+  
 ##  <a name="BKMK_VoidReturnType"></a> Void Return Type  
  The primary use of `Sub` procedures is in event handlers, where there is no return type (referred to as a void return type in other languages). A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget." However, you should return a `Task` wherever possible, because a void-returning async method can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   
@@ -134,7 +143,21 @@ Await Task_MethodAsync()
   
  The following code defines an async event handler.  
   
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
+```vb  
+' SUB EXAMPLE  
+Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click  
+  
+    textBox1.Clear()  
+  
+    ' Start the process and await its completion. DriverAsync is a   
+    ' Task-returning async method.  
+    Await DriverAsync()  
+  
+    ' Say goodbye.  
+    textBox1.Text &= vbCrLf & "All done, exiting button-click event handler."  
+End Sub  
+```  
+  
 ##  <a name="BKMK_Example"></a> Complete Example  
  The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.  
   
@@ -169,7 +192,6 @@ Await Task_MethodAsync()
   
         </Grid>  
     </Window>  
-  
     ```  
   
      A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  

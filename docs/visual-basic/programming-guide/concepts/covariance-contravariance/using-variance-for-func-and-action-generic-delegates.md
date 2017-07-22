@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 36c3012f-b39c-493b-b90f-079b5912ac1b
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -104,4 +104,4 @@ End Class
   
 ## See Also  
  [Covariance and Contravariance (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md)   
- [Generics](https://msdn.microsoft.com/library/ms172192)
+ [Generics](~/docs/standard/generics/index.md)

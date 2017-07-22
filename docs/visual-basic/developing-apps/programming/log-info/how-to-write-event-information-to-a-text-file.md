@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "events [Visual Basic], writing event information to a text file"
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -58,7 +58,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 3.  Add this element to that `<listeners>` section:  
   
-    ```  
+    ```xml  
     <add name="FileLogListener" />  
     ```  
   
@@ -66,7 +66,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 5.  Add this element to that `<sharedListeners>` section:  
   
-    ```  
+    ```xml  
     <add name="FileLogListener"   
         type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
               Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral,   

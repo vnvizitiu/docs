@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 5f4b3790-c83f-4eb3-a889-e3587edf3ca1
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve the Value of an Attribute (LINQ to XML) (Visual Basic)
@@ -32,7 +32,7 @@ Console.WriteLine(str)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Root Attr="abcde" />  
 abcde  
 ```  

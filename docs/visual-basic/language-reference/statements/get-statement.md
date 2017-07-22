@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "property procedures, Get statements"
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -46,8 +46,8 @@ Declares a `Get` property procedure used to retrieve the value of a property.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] Get()  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ] Get()  
+    [ statements ]  
 End Get  
 ```  
   
@@ -56,7 +56,7 @@ End Get
 |Term|Definition|  
 |---|---|  
 |`attributelist`|Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).|  
-|`accessmodifier`|Optional on at most one of the `Get` and `Set` statements in this property. Can be one of the following:<br /><br /> -   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Optional on at most one of the `Get` and `Set` statements in this property. Can be one of the following:<br /><br /> -   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />-   `Protected Friend`<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
 |`statements`|Optional. One or more statements that run when the `Get` property procedure is called.|  
 |`End Get`|Required. Terminates the definition of the `Get` property procedure.|  
   

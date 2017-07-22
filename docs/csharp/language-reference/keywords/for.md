@@ -59,7 +59,7 @@ By using a `for` loop, you can run a statement or a block of statements repeated
   
  Every `for` statement defines initializer, condition, and iterator sections. These sections usually determine how many times the loop iterates.  
   
-```cs  
+```csharp  
 for (initializer; condition; iterator)  
     body  
 ```  
@@ -121,12 +121,12 @@ for (initializer; condition; iterator)
  [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [for Statement (C++)](https://docs.microsoft.com/cpp/cpp/for-statement-cpp)   
+ [for Statement (C++)](/cpp/cpp/for-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

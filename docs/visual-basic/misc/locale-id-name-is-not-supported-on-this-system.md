@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_LCIDNotSupported1"
 ms.assetid: 62701434-0ac2-45b8-8b40-a9adc09ae6df
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -41,4 +41,4 @@ You are attempting to use `VbStrConv`, but your system does not support the spec
   
 ## See Also  
  <xref:System.Globalization>   
- [Introduction to International Applications Based on the .NET Framework](https://docs.microsoft.com/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

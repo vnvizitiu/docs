@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "custom events"
 ms.assetid: 87ebee87-260c-462f-979c-407874debd19
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -51,5 +51,5 @@ There are several circumstances when it is important that an application keep it
   
 ## See Also  
  <xref:System.ComponentModel.EventHandlerList>   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)   
  [How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)

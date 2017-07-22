@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30910"
 ms.assetid: 68fc05c5-5d55-4742-9a3b-ea04312594f4
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -55,4 +55,4 @@ A class or interface inherits from a base class or interface but has a less rest
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
  [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
  [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)   
- [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)

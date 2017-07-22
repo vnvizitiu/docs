@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC42017"
 ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -43,7 +43,7 @@ An object is assigned to a variable declared to be of the [Object Data Type](../
   
  If you declare the variable to be of a specific type, the compiler can perform *early binding* at compile time. This results in improved performance, controlled access to the members of the specific type, and better readability of your code.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42017  
   
@@ -52,5 +52,5 @@ An object is assigned to a variable declared to be of the [Object Data Type](../
 -   If possible, declare the variable to be of a specific type.  
   
 ## See Also  
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 32a9e547-c1b7-40f2-8118-7eef1d19649e
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Q-Z Statements
-The following table contains a listing of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language statements.  
+The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
   
 |||||  
 |---|---|---|---|  

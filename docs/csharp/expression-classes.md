@@ -1,5 +1,5 @@
 ---
-title: Framework Types Supporting Expression Trees
+title: Framework Types Supporting Expression Trees | Microsoft Docs
 description: Framework Types Supporting Expression Trees
 keywords: .NET, .NET Core
 author: BillWagner
@@ -18,7 +18,7 @@ ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 
 There is a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
-list [here](https://docs.microsoft.com/dotnet/core/api/System.Linq.Expressions).
+list [here](/dotnet/core/api/System.Linq.Expressions).
 Rather than run through the full list, let's understand how the framework classes have been designed.
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions
@@ -46,7 +46,7 @@ expression. I've followed the practice of checking the node type, then
 casting to a variable access expression and then checking the properties of
 the specific expression type:
 
-```cs
+```csharp
 Expression<Func<int, int>> addFive = (num) => num + 5;
 
 if (addFive.NodeType == ExpressionType.Lambda)
@@ -66,7 +66,7 @@ The `System.Linq.Expression` class also contains many static methods to create e
 methods create an expression node using the arguments supplied for its children. In this way,
 you build an expression up from its leaf nodes. For example, this code builds an Add expression:
 
-```cs
+```csharp
 // Addition is an add expression for "1 + 2"
 var one = Expression.Constant(1, typeof(int));
 var two = Expression.Constant(2, typeof(int));

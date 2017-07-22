@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 
 ---
 # How to: Find the Root Element (XPath-LINQ to XML) (C#)
-This topic shows how to get the root element with XPath and [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)].  
+This topic shows how to get the root element with XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
   
  The XPath expression is:  
   
@@ -29,7 +29,7 @@ This topic shows how to get the root element with XPath and [!INCLUDE[sqltecxlin
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
-```cs  
+```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 // LINQ to XML query  

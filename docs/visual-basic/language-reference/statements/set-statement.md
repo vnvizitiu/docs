@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "properties [Visual Basic], write-only"
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -45,8 +45,8 @@ Declares a `Set` property procedure used to assign a value to a property.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
+    [ statements ]  
 End Set  
 ```  
   
@@ -65,7 +65,7 @@ End Set
   
 -   `Protected Friend`  
   
- See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  `value`  
  Required. Parameter containing the new value for the property.  

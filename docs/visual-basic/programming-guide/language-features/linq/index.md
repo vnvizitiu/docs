@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -35,11 +35,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # LINQ in Visual Basic
-This section contains overviews, examples, and background information that will help you understand and use Visual Basic and [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)].  
+This section contains overviews, examples, and background information that will help you understand and use Visual Basic and [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)].  
   
 ## In This Section  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- Provides an introduction to [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] providers, operators, query structure, and language features.  
+ Provides an introduction to [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] providers, operators, query structure, and language features.  
   
  [How to: Query a Database](../../../../visual-basic/programming-guide/language-features/linq/how-to-query-a-database-by-using-linq.md)  
  Provides an example of how to connect to a SQL Server database and execute a query by using LINQ.  

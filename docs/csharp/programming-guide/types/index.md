@@ -82,15 +82,15 @@ translation.priority.mt:
  For more information, see [Casting and Type Conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md).  
   
 ## Built-in Types  
- C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in `string` and `object` types. These are available for you to use in any C# program. For a more information about the built-in types, see [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md).  
+ C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in `string` and `object` types. These are available for you to use in any C# program. For more information about the built-in types, see [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md).  
   
 ## Custom Types  
  You use the [struct](../../../csharp/language-reference/keywords/struct.md), [class](../../../csharp/language-reference/keywords/class.md), [interface](../../../csharp/language-reference/keywords/interface.md), and [enum](../../../csharp/language-reference/keywords/enum.md) constructs to create your own custom types. The .NET Framework class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=217856).  
   
 ## The Common Type System  
- It is important to understand two fundamental points about the type system in the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]:  
+ It is important to understand two fundamental points about the type system in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]:  
   
--   It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=fullName> (C# keyword: [int](../../../csharp/language-reference/keywords/int.md)), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=fullName> (C# keyword: [object](../../../csharp/language-reference/keywords/object.md)). This unified type hierarchy is called the [Common Type System](http://msdn.microsoft.com/library/53c57c96-83e1-4ee3-9543-9ac832671a89) (CTS). For more information about inheritance in C#, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
+-   It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=fullName> (C# keyword: [int](../../../csharp/language-reference/keywords/int.md)), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=fullName> (C# keyword: [object](../../../csharp/language-reference/keywords/object.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
   
 -   Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET Framework class library and also your own user-defined types. Types that you define by using the [struct](../../../csharp/language-reference/keywords/struct.md) keyword are value types; all the built-in numeric types are `structs`. Types that you define by using the [class](../../../csharp/language-reference/keywords/class.md) keyword are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.  
   
@@ -109,14 +109,14 @@ Value types and reference types in the CTS
   
  The built-in numeric types are structs, and they have properties and methods that you can access:  
   
-```cs  
+```csharp  
 // Static method on type Byte.  
 byte b = Byte.MaxValue;  
 ```  
   
  But you declare and assign values to them as if they were simple non-aggregate types:  
   
-```cs  
+```csharp  
 byte num = 0xA;  
 int i = 5;  
 char c = 'Z';  
@@ -128,10 +128,10 @@ char c = 'Z';
   
  [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_4.cs)]  
   
- For more information about structs, see [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md). For more information about value types in the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], see [Common Type System](http://msdn.microsoft.com/library/53c57c96-83e1-4ee3-9543-9ac832671a89).  
+ For more information about structs, see [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md). For more information about value types in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], see [Common Type System](../../../standard/base-types/common-type-system.md).  
   
  The other category of value types is [enum](../../../csharp/language-reference/keywords/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=fullName> enumeration in the .NET Framework class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:  
-  
+ 
  [!code-cs[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_5.cs)]  
   
  The `System.IO.FileMode.Create` constant has a value of 2. However, the name is much more meaningful for humans reading the source code, and for that reason it is better to use enumerations instead of constant literal numbers. For more information, see <xref:System.IO.FileMode?displayProperty=fullName>.  
@@ -141,18 +141,17 @@ char c = 'Z';
 ### Reference Types  
  A type that is defined as a [class](../../../csharp/language-reference/keywords/class.md), [delegate](../../../csharp/language-reference/keywords/delegate.md), array, or [interface](../../../csharp/language-reference/keywords/interface.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../../csharp/language-reference/keywords/null.md) until you explicitly create an instance of the object by using the [new](../../../csharp/language-reference/keywords/new.md) operator, or assign it an object that has been created elsewhere by using `new, as shown in the following example:`  
   
-```cs  
+```csharp  
 MyClass mc = new MyClass();  
 MyClass mc2 = mc;  
 ```  
+   An interface must be initialized together with a class object that implements it. If `MyClass` implements `IMyInterface`, you create an instance of `IMyInterface` as shown in the following example:  
   
- An interface must be initialized together with a class object that implements it. If `MyClass` implements `IMyInterface`, you create an instance of `IMyInterface` as shown in the following example:  
-  
-```cs  
+```csharp  
 IMyInterface iface = new MyClass();  
 ```  
   
- When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios it does not create a performance issue. For more information about garbage collection, see [Automatic Memory Management](http://msdn.microsoft.com/library/d4850de5-fa63-4936-a250-5678d118acba).  
+ When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios it does not create a performance issue. For more information about garbage collection, see [Automatic Memory Management](../../../standard/automatic-memory-management.md).  
   
  All arrays are reference types, even if their elements are value types. Arrays implicitly derive from the <xref:System.Array?displayProperty=fullName> class, but you declare and use them with the simplified syntax that is provided by C#, as shown in the following example:  
   
@@ -169,8 +168,13 @@ IMyInterface iface = new MyClass();
   
 ## Generic Types  
  A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET Framework type <xref:System.Collections.Generic.List%601?displayProperty=fullName> has one type parameter that by convention is given the name *T*. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, string:  
-  
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
+ 
+```csharp
+List<string> stringList = new List<string>();
+stringList.Add("String example");
+// compile time error adding a type other than a string:
+stringList.Add(4);
+```
  The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../../csharp/language-reference/keywords/object.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](../../../csharp/programming-guide/generics/index.md).  
   
 ## Implicit Types, Anonymous Types, and Nullable Types  
@@ -198,14 +202,12 @@ IMyInterface iface = new MyClass();
 -   [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
   
 -   [Generics](../../../csharp/programming-guide/generics/index.md)  
-  
--   [Variables and Expressions](http://go.microsoft.com/fwlink/?LinkId=221228) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Conversion of XML Data Types](http://msdn.microsoft.com/library/a2aa99ba-8239-4818-9281-f1d72ee40bde)   
+ [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)   
  [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)

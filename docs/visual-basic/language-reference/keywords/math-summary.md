@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "math functions"
 ms.assetid: 6abf2dd7-92d2-488a-8e2b-819be9b30c3f
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Math Summary (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

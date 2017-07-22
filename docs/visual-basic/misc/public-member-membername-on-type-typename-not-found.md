@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrMissingMember_MemberNotFoundOnType2"
 ms.assetid: 6300feb8-78ac-4dd0-9653-1d03e1f5bc20
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -41,4 +41,4 @@ The member you are trying to access cannot be found. This error can occur when a
   
 ## See Also  
  [Public](../../visual-basic/language-reference/modifiers/public.md)   
- [Early and Late Binding](../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)
+ [Early and Late Binding](../../visual-basic/programming-guide/language-features/early-late-binding/index.md)

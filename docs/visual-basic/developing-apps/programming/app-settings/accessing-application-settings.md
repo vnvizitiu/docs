@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], application settings"
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -53,5 +53,5 @@ This section contains topics describing the `My.Settings` object and the tasks i
 |Determine the values of user settings|[How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
   
 ## See also  
- [Managing Application Settings (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet)   
+ [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)   
  [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)

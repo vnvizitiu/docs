@@ -42,7 +42,7 @@ The `float` keyword signifies a simple type that stores 32-bit floating-point va
 ## Literals  
  By default, a real numeric literal on the right side of the assignment operator is treated as [double](double.md). Therefore, to initialize a float variable, use the suffix `f` or `F`, as in the following example:  
   
-```cs
+```csharp
 float x = 3.5F;  
 ```
   
@@ -73,7 +73,7 @@ float x = 3.5F;
  [!code-cs[csrefKeywordsTypes#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/float_1.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Single>   

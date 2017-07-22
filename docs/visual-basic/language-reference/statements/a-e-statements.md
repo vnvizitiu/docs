@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: af97c2bf-dddb-48a8-8eb6-798cd219430b
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # A-E Statements
-The following table contains a listing of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language statements.  
+The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
   
 |||||  
 |---|---|---|---|  

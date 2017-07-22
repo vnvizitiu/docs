@@ -1,8 +1,8 @@
 ---
-title: "Return a query from a method"
+title: Return a query from a method | Microsoft Docs
 description: How to return a query.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC31122"
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -65,4 +65,4 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
 ## See Also  
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
  [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

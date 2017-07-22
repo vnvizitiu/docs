@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 30b42987-0e0e-4b2b-adb1-5255ddfbcd7b
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Project an Anonymous Type (Visual Basic)
@@ -50,7 +50,6 @@ Dim custList = _
 For Each cust In custList  
     Console.WriteLine("{0}:{1}:{2}", cust.CustomerID, cust.CompanyName, cust.ContactName)  
 Next  
-  
 ```  
   
  This code produces the following output:  

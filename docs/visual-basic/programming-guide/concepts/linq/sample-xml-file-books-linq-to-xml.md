@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 27ca5847-2289-40c0-8331-ede67ec59d1c
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Sample XML File: Books (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation. The file contains information about books.  
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. The file contains information about books.  
   
 ## books.xml  
   

@@ -37,7 +37,7 @@ The **/target:exe** option causes the compiler to create an executable (EXE), co
   
 ## Syntax  
   
-```  
+```console  
 /target:exe  
 ```  
   
@@ -46,7 +46,7 @@ The **/target:exe** option causes the compiler to create an executable (EXE), co
   
  Use [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) to create a Windows program executable.  
   
- Unless otherwise specified with the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the input file that contains the [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method.  
+ Unless otherwise specified with the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the input file that contains the [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method.  
   
  When specified at the command line, all files up to the next **/out** or **/target:module** option are used to create the .exe file  
   
@@ -65,7 +65,7 @@ The **/target:exe** option causes the compiler to create an executable (EXE), co
 ## Example  
  Each of the following command lines will compile `in.cs`, creating `in.exe`:  
   
-```  
+```console  
 csc /target:exe in.cs  
 csc in.cs  
 ```  

@@ -37,7 +37,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
 ## Syntax  
   
-```  
+```console  
 /moduleassemblyname:assembly_name  
 ```  
   
@@ -65,7 +65,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
 ## Example  
  This sample builds an assembly with a private type, and that gives friend assembly access to an assembly called csman_an_assembly.  
   
-```  
+```csharp  
 // moduleassemblyname_1.cs  
 // compile with: /target:library  
 using System;  
@@ -85,7 +85,7 @@ class An_Internal_Class
 ## Example  
  This sample builds a .netmodule that accesses a non-public type in the assembly moduleassemblyname_1.dll. By knowing that this .netmodule will be built into an assembly called csman_an_assembly, we can specify **/moduleassemblyname**, allowing the .netmodule to access non-public types in an assembly that has granted friend assembly access to csman_an_assembly.  
   
-```  
+```csharp  
 // moduleassemblyname_2.cs  
 // compile with: /moduleassemblyname:csman_an_assembly /target:module /reference:moduleassemblyname_1.dll  
 class B {  
@@ -99,7 +99,7 @@ class B {
 ## Example  
  This code sample builds the assembly csman_an_assembly, referencing the previously-built assembly and .netmodule.  
   
-```  
+```csharp  
 // csman_an_assembly.cs  
 // compile with: /addmodule:moduleassemblyname_2.netmodule /reference:moduleassemblyname_1.dll  
 class A {  
@@ -113,4 +113,4 @@ class A {
  **An_Internal_Class.Test called**   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

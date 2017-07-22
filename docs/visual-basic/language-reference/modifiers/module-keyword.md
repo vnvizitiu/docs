@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -50,4 +50,5 @@ Specifies that an attribute at the beginning of a source file applies to the cur
 ## See Also  
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+

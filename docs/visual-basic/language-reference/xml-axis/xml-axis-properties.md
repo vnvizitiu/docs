@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "XML [Visual Basic], accessing"
 ms.assetid: 7e400e20-5d1e-4d22-a65c-9df79d5c1621
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # XML Axis Properties (Visual Basic)
-The topics in this section document the syntax of XML axis properties in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. The XML axis properties make it easy to access XML directly in your code.  
+The topics in this section document the syntax of XML axis properties in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The XML axis properties make it easy to access XML directly in your code.  
   
 ## In This Section  
   

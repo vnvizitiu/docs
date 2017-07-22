@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "delegates [Visual Basic], passing procedures"
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -37,7 +37,7 @@ translation.priority.ht:
 # How to: Pass Procedures to Another Procedure in Visual Basic
 This example shows how to use delegates to pass a procedure to another procedure.  
   
- A delegate is a type that you can use like any other type in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. The `AddressOf` operator returns a delegate object when applied to a procedure name.  
+ A delegate is a type that you can use like any other type in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The `AddressOf` operator returns a delegate object when applied to a procedure name.  
   
  This example has a procedure with a delegate parameter that can take a reference to another procedure, obtained with the `AddressOf` operator.  
   
@@ -68,7 +68,7 @@ This example shows how to use delegates to pass a procedure to another procedure
      When `Test` is called, it first displays the result of `AddNumbers` acting on `5` and `3`, which is 8. Then the result of `SubtractNumbers` acting on `9` and `3` is displayed, which is 6.  
   
 ## See Also  
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [How to: Invoke a Delegate Method](../../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)

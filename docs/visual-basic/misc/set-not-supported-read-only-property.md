@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID383"
 ms.assetid: 0b97b683-6626-42ec-af0b-aaa3c973a76b
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -42,4 +42,4 @@ You tried to set or change a property that is read only.
 2.  Change the reference to only return the value of the property at run time.  
   
 ## See Also  
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

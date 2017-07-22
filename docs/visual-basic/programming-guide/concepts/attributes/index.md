@@ -1,5 +1,5 @@
 ---
-title: "Attributes (Visual Basic) | Microsoft Docs"
+title: "Attributes overview (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -22,7 +22,7 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Attributes (Visual Basic)
+# Attributes overview (Visual Basic)
 Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md).  
   
  Attributes have the following properties:  

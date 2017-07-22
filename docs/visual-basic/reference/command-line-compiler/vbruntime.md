@@ -1,5 +1,5 @@
 ---
-title: "-vbruntime | Microsoft Docs"
+title: "/vbruntime | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "/vbruntime compiler option [Visual Basic]"
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

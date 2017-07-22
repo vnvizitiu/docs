@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -424,7 +424,6 @@ Public Class Stack(Of T)
         Next  
     End Function  
 End Class  
-  
 ```  
   
 ##  <a name="BKMK_SyntaxInformation"></a> Syntax Information  

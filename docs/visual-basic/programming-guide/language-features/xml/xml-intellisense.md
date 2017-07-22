@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "IntelliSense [Visual Basic], XML"
 ms.assetid: 59506ce9-d64e-417e-90fc-e9fe19f0a8fa
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -43,7 +43,7 @@ The Visual Basic Code Editor includes IntelliSense features for XML that provide
 XML IntelliSense  
   
 ## Enabling XML IntelliSense in Visual Basic  
- To enable XML IntelliSense in Visual Basic, you must include an XSD schema file in your Visual Basic project. You must also import the target namespace for the XSD schema into your code file by using the `Imports` statement. Alternatively, you can add the target namespace to the project-level namespace list by using the **References** page of the Visual Basic Project Designer. For examples, see [How to: Enable XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md). For more information, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) and [References Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
+ To enable XML IntelliSense in Visual Basic, you must include an XSD schema file in your Visual Basic project. You must also import the target namespace for the XSD schema into your code file by using the `Imports` statement. Alternatively, you can add the target namespace to the project-level namespace list by using the **References** page of the Visual Basic Project Designer. For examples, see [How to: Enable XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md). For more information, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) and [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
   
  Note that by default you cannot see XSD schema files in Visual Basic projects. You may have to click the **Show All Files** button to select an XSD file to include in your project.  
   
@@ -69,7 +69,7 @@ XML IntelliSense
   
  For example, consider the following XSD schema.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema attributeFormDefault="unqualified"   
            elementFormDefault="qualified"   
@@ -97,7 +97,7 @@ XML IntelliSense
   
  Valid XML for the XSD schema would resemble the following.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <PurchaseOrders xmlns="http://SamplePurchaseOrder">  
   <PurchaseOrder PurchaseOrderNumber="12345" OrderDate="2000-1-1">  
@@ -131,4 +131,4 @@ po.<
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   
  [XML Descendant Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)   
- [References Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic)
+ [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)

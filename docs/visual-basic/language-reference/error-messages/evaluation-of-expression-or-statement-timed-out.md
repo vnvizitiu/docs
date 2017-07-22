@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30722"
 ms.assetid: 6f452da8-6ef8-41fd-9ab8-6f681cf7d433
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -48,4 +48,4 @@ The evaluation of an expression did not complete in a timely manner.
 2.  Simplify your expression so that it takes less time to execute.  
   
 ## See Also  
- [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

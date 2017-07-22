@@ -1,5 +1,5 @@
 ---
-title: "-reference (Visual Basic) | Microsoft Docs"
+title: "/reference (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "-r compiler option [Visual Basic]"
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -68,7 +68,7 @@ Causes the compiler to make type information in the specified assemblies availab
   
  For the compiler to recognize a type in an assembly (not a module), it must be forced to resolve the type. One example of how you can do this is to define an instance of the type. Other ways are available to resolve type names in an assembly for the compiler. For example, if you inherit from a type in an assembly, the type name then becomes known to the compiler.  
   
- The Vbc.rsp response file, which references commonly used [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] assemblies, is used by default. Use `/noconfig` if you do not want the compiler to use Vbc.rsp.  
+ The Vbc.rsp response file, which references commonly used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies, is used by default. Use `/noconfig` if you do not want the compiler to use Vbc.rsp.  
   
  The short form of `/reference` is `/r`.  
   

@@ -1,9 +1,9 @@
 ---
-title: Language independence and language-independent components
+title: Language independence and language-independent components | Microsoft Docs
 description: Language independence and language-independent components
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: .net
@@ -190,7 +190,7 @@ Overloading | [Overloads](#overloads) |Properties and methods can be overloaded 
 Overloading | -- | If two or more CLS-compliant methods declared in a type have the same nameand, for a specific set of type instantiations, they have the same parameter and return types, then all these methods shall be semantically equivalent at those type instantiations. | 48
 Properties | [Properties](#properties) | The methods that implement the getter and setter methods of a property shall be marked `SpecialName` in the metadata. | 24
 Properties | [Properties](#properties) | A property’s accessors shall all be static, all be virtual, or all be instance. | 26
-Properties | [Properties](#properties) | The type of a property shall be the return type of the getter and the type of the last argument of the setter. The types of the parameters of the property shall be the types of the parameters to the getter and the types of all but the final parameter of the setter. All of these types shall be CLS-compliant, and shall not be managed pointers (i.e., shall not be passed by reference). | 27
+Properties | [Properties](#properties) | The type of a property shall be the return type of the getter and the type of the last argument of the setter. The types of the parameters of the property shall be the types of the parameters to the getter and the types of all but the final parameter of the setter. All of these types shall be CLS-compliant, and shall not be managed pointers (that is, shall not be passed by reference). | 27
 Properties | [Properties](#properties) | Properties shall adhere to a specific naming pattern. The `SpecialName` attribute referred to in CLS rule 24 shall be ignored in appropriate name comparisons and shall adhere to identifier rules. A property shall have a getter method, a setter method, or both. | 28
 Type conversion | [Type conversion](#type-conversion) | If either op_Implicit or op_Explicit is provided, an alternate means of providing the coercion shall be provided. | 39
 Types | [Types and type member signatures](#types-and-type-member-signatures) | Boxed value types are not CLS-compliant. | 3
@@ -1104,7 +1104,7 @@ CLS-compliant arrays conform to the following rules:
          Return numbersOut
      End Function
   End Module
-```
+  ```
 
 ### Interfaces
 
@@ -1654,7 +1654,6 @@ End Class
 '    
 '    Public Class BaseCollection(Of T As BaseClass)
 '                                        ~~~~~~~~~
-
 ```
 
 If a generic type is derived from a generic base type, it must redeclare any constraints so that it can guarantee that constraints on the base type are also satisfied. The following example defines a `Number<T>` that can represent any numeric type. It also defines a `FloatingPoint<T>` class that represents a floating point value. However, the source code fails to compile, because it does not apply the constraint on `Number<T>` (that T must be a value type) to `FloatingPoint<T>`.

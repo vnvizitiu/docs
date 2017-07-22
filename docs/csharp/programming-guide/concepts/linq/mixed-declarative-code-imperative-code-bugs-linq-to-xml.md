@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Mixed Declarative Code/Imperative Code Bugs (LINQ to XML) (C#)
-[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] contains various methods that allow you to modify an XML tree directly. You can add elements, delete elements, change the contents of an element, add attributes, and so on. This programming interface is described in [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md). If you are iterating through one of the axes, such as <xref:System.Xml.Linq.XContainer.Elements%2A>, and you are modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.  
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] contains various methods that allow you to modify an XML tree directly. You can add elements, delete elements, change the contents of an element, add attributes, and so on. This programming interface is described in [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md). If you are iterating through one of the axes, such as <xref:System.Xml.Linq.XContainer.Elements%2A>, and you are modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.  
   
  This problem is sometimes known as "The Halloween Problem".  
   
@@ -47,7 +47,7 @@ translation.priority.mt:
 ## Adding While Iterating  
  For example, suppose you want to write some code that for every element in a tree, you want to create a duplicate element:  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -61,7 +61,7 @@ foreach (XElement e in root.Elements())
   
  You can fix this problem by pulling the collection into memory using the <xref:System.Linq.Enumerable.ToList%2A> standard query operator, as follows:  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -88,7 +88,7 @@ Console.WriteLine(root);
 ## Deleting While Iterating  
  If you want to delete all nodes at a certain level, you might be tempted to write code like the following:  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -112,7 +112,7 @@ Console.WriteLine(root);
   
  The solution again is to call <xref:System.Linq.Enumerable.ToList%2A> to materialize the collection, as follows:  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -131,7 +131,7 @@ Console.WriteLine(root);
   
  Alternatively, you can eliminate the iteration altogether by calling <xref:System.Xml.Linq.XElement.RemoveAll%2A> on the parent element:  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -146,7 +146,7 @@ Console.WriteLine(root);
   
  Another possible approach would be to put in some sort of transaction syntax into LINQ, and have the compiler attempt to analyze the code and determine if any particular collection needed to be materialized. However, attempting to determine all code that has side-effects is incredibly complex. Consider the following code:  
   
-```cs  
+```csharp  
 var z =  
     from e in root.Elements()  
     where TestSomeCondition(e)  
@@ -168,7 +168,7 @@ var z =
   
  Second, if performance and other considerations allow, use only declarative code. Don't modify your existing XML tree. Generate a new one.  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  

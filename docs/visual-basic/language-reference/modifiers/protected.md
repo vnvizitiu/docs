@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Protected keyword"
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -57,7 +57,7 @@ Specifies that one or more declared programming elements are accessible only fro
   
      Protected access is not a superset or subset of friend access.  
   
--   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+-   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  The `Protected` modifier can be used in these contexts:  
   
@@ -89,7 +89,7 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)   
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

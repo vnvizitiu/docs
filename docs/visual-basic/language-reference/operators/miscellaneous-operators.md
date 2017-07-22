@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "operators [Visual Basic], miscellaneous"
 ms.assetid: 2423b3c5-fc3f-479c-bcd2-2c6ebe92814f
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Miscellaneous Operators (Visual Basic)
-The following are miscellaneous operators defined in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+The following are miscellaneous operators defined in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
   

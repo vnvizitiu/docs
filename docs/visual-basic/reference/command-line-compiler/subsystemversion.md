@@ -1,13 +1,11 @@
 ---
-title: "-subsystemversion (Visual Basic) | Microsoft Docs"
-
+title: "/subsystemversion (Visual Basic) | Microsoft Docs"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "/subsystemversion compiler option [Visual Basic]"
@@ -15,9 +13,8 @@ helpviewer_keywords:
   - "subsystemversion compiler option [Visual Basic]"
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-
+author: dotnet-bot
+ms.author: dotnetcontent
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -62,7 +59,7 @@ Specifies the minimum version of the subsystem on which the generated executable
 |Windows Vista|6.00|  
 |Windows 7|6.01|  
 |Windows Server 2008|6.01|  
-|[!INCLUDE[win8](../../../csharp/language-reference/compiler-options/includes/win8_md.md)]|6.02|  
+|[!INCLUDE[win8](~/includes/win8-md.md)]|6.02|  
   
 ## Default values  
  The default value of the **/subsystemversion** compiler option depends on the conditions in the following list:  
@@ -75,15 +72,16 @@ Specifies the minimum version of the subsystem on which the generated executable
   
     -   [/platform:arm](../../../visual-basic/reference/command-line-compiler/platform.md)  
   
--   The default value is 6.00 if you're using MSBuild, you're targeting [!INCLUDE[net_v45](../../../csharp/language-reference/compiler-options/includes/net_v45_md.md)], and you haven't set any of the compiler options that were specified earlier in this list.  
+-   The default value is 6.00 if you're using MSBuild, you're targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)], and you haven't set any of the compiler options that were specified earlier in this list.  
   
 -   The default value is 4.00 if none of the previous conditions is true.  
   
 ## Setting this option  
- To set the **/subsystemversion** compiler option in Visual Studio, you must open the .vbproj file and specify a value for the `SubsystemVersion` property in the MSBuild XML. You can't set this option in the Visual Studio IDE. For more information, see "Default values" earlier in this topic or [Common MSBuild Project Properties](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties).  
+ To set the **/subsystemversion** compiler option in Visual Studio, you must open the .vbproj file and specify a value for the `SubsystemVersion` property in the MSBuild XML. You can't set this option in the Visual Studio IDE. For more information, see "Default values" earlier in this topic or [Common MSBuild Project Properties](/visualstudio/msbuild/common-msbuild-project-properties).  
   
 
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
- [MSBuild Properties](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/ee3538c5-0d7d-4c18-a1d7-edf460cd1c8a/locales/en-US)
+[Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+
+[MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC32500"
 ms.assetid: 6fa34c55-368e-4d7d-b488-07a3fffe045f
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -51,4 +51,5 @@ A `COMClassAttribute` attribute block specifies a globally unique identifier (GU
   
 ## See Also  
  <xref:System.Guid>   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+[Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+

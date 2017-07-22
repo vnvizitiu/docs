@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataRepeater, changing orientation"
 ms.assetid: 33aa8fd5-ac63-4bd0-ba13-8c2ab17e7824
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -47,7 +47,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control can be displaye
     > [!NOTE]
     >  You must select the outer border of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control by clicking in the lower region of the control, not in the upper <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A> region.  
   
-2.  In the Properties window, set the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyle%2A> property to either <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles> or <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles>.  
+2.  In the Properties window, set the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyle%2A> property to either <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles.Vertical> or <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterLayoutStyles.Horizontal>.  
   
 ### To change the layout at run time  
   

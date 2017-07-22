@@ -13,12 +13,12 @@ dev_langs:
   - "VB"
 ms.assetid: 2868abfd-9f7b-412a-9cb5-f643f0fed146
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find a List of Child Elements (XPath-LINQ to XML) (Visual Basic)
-This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
+This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
   
  The XPath expression is: `./*`  
   
@@ -46,7 +46,6 @@ End If
 For Each el As XElement In list1  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  This example produces the following output:  

@@ -45,7 +45,7 @@ An enumeration type (also named an enumeration or an enum) provides an efficient
   
  You can verify the underlying numeric values by casting  to the underlying type, as the following example shows.  
   
-```cs  
+```csharp  
 Days today = Days.Monday;  
 int dayNumber =(int)today;  
 Console.WriteLine("{0} is day number #{1}.", today, dayNumber);  
@@ -63,7 +63,7 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
 -   You clearly specify for client code which values are valid for the variable.  
   
--   In [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)], IntelliSense lists the defined values.  
+-   In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], IntelliSense lists the defined values.  
   
  When you do not specify values for the elements in the enumerator list, the values are automatically incremented by 1. In the previous example, `Days.Sunday` has a value of 0, `Days.Monday` has a value of 1, and so on. When you create a new `Days` object, it will have a default value of `Days.Sunday` (0) if you do not explicitly assign it a value. When you create an enum, select the most logical default value and give it a value of zero. That will cause all enums to have that default value if they are not explicitly assigned a value when they are created.  
   
@@ -105,10 +105,7 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
  For more information, see <xref:System.Enum?displayProperty=fullName>.  
   
  You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).  
-  
-## Featured Book Chapter  
- [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## See Also  
  <xref:System.Enum?displayProperty=fullName>   
  [C# Programming Guide](../../csharp/programming-guide/index.md)   

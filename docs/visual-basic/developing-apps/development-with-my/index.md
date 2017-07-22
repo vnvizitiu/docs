@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Visual Basic, programming in"
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -58,7 +58,7 @@ Visual Basic provides new features for rapid application development that improv
  Describes the `My.Resources` and `My.Settings` objects, which provide access to an application's resources and settings.  
   
  [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
- Describes the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Application Startup/Shutdown model.  
+ Describes the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application Startup/Shutdown model.  
   
  [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
  Gives details on which `My` features are available in different project types.  

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Collection object, summary"
 ms.assetid: c4586369-d817-4453-9cb0-1a272fc66737
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,9 +39,9 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Action|Language element|  
 |------------|----------------------|  
 |Create a `Collection` object.|<xref:Microsoft.VisualBasic.Collection>|  
-|Add an item to a collection.|<xref:Microsoft.VisualBasic.Collection.Add%2A>|  
-|Remove an object from a collection.|<xref:Microsoft.VisualBasic.Collection.Remove%2A>|  
-|Reference an item in a collection.|<xref:Microsoft.VisualBasic.Collection.Item%2A>|  
+|Add an item to a collection.|<xref:Microsoft.VisualBasic.Collection.Add*>|  
+|Remove an object from a collection.|<xref:Microsoft.VisualBasic.Collection.Remove*>|  
+|Reference an item in a collection.|<xref:Microsoft.VisualBasic.Collection.Item*>|  
 |Return a reference to an <xref:System.Collections.IEnumerator> interface.|<xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A>|  
   
 ## See Also  

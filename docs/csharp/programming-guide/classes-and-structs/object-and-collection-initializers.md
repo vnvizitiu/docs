@@ -42,25 +42,25 @@ Object initializers let you assign values to any accessible fields or properties
  [!code-cs[csProgGuideLINQ#45](../../../csharp/programming-guide/arrays/codesnippet/CSharp/object-and-collection-initializers_2.cs)]  
   
 ## Object Initializers with anonymous types  
- Although object initializers can be used in any context, they are especially useful in [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] query expressions. Query expressions make frequent use of [anonymous types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md), which can only be initialized by using an object initializer, as shown in the following declaration.  
+ Although object initializers can be used in any context, they are especially useful in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions. Query expressions make frequent use of [anonymous types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md), which can only be initialized by using an object initializer, as shown in the following declaration.  
   
-```  
+```csharp
 var pet = new { Age = 10, Name = "Fluffy" };  
 ```  
   
- Anonymous types enable the `select` clause in a [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] query expression to transform objects of the original sequence into objects whose value and shape may differ from the original. This is useful if you want to store only a part of the information from each object in a sequence. In the following example, assume that a product object (`p`) contains many fields and methods, and that you are only interested in creating a sequence of objects that contain the product name and the unit price.  
+ Anonymous types enable the `select` clause in a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expression to transform objects of the original sequence into objects whose value and shape may differ from the original. This is useful if you want to store only a part of the information from each object in a sequence. In the following example, assume that a product object (`p`) contains many fields and methods, and that you are only interested in creating a sequence of objects that contain the product name and the unit price.  
   
  [!code-cs[csProgGuideLINQ#40](../../../csharp/programming-guide/arrays/codesnippet/CSharp/object-and-collection-initializers_3.cs)]  
   
  When this query is executed, the `productInfos` variable will contain a sequence of objects that can be accessed in a `foreach` statement as shown in this example:  
   
-```  
+```csharp
 foreach(var p in productInfos){...}  
 ```  
   
  Each object in the new anonymous type has two public properties which receive the same names as the properties or fields in the original object. You can also rename a field when you are creating an anonymous type; the following example renames the `UnitPrice` field to `Price`.  
   
-```  
+```csharp
 select new {p.ProductName, Price = p.UnitPrice};  
 ```  
   
@@ -68,11 +68,11 @@ select new {p.ProductName, Price = p.UnitPrice};
  It is a compile-time error to use an object initializer with a nullable struct.  
   
 ## Collection initializers  
- Collection initializers let you specify one or more element initializers when you initialize a collection class that implements <xref:System.Collections.IEnumerable> or a class with an `Add` extension method. The element initializers can be a simple value, an expression or an object initializer. By using a collection initializer you do not have to specify multiple calls to the `Add` method of the class in your source code; the compiler adds the calls.  
+ Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression or an object initializer. By using a collection initializer you do not have to specify multiple calls to the `Add` method of the class in your source code; the compiler adds the calls.  
   
  The following examples shows two simple collection initializers:  
   
-```  
+```csharp
 List<int> digits = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };  
 List<int> digits2 = new List<int> { 0 + 1, 12 % 3, MakeInt() };  
 ```  
@@ -87,7 +87,7 @@ List<int> digits2 = new List<int> { 0 + 1, 12 % 3, MakeInt() };
   
  You can specify indexed elements if the collection supports indexing.  
   
-```  
+```csharp
 var numbers = new Dictionary<int, string> {   
     [7] = "seven",   
     [9] = "nine",   

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My.Computer.Clipboard object"
 ms.assetid: 05d4ede9-1f9a-4495-87f0-77350b8d2e5d
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -50,7 +50,7 @@ Provides methods for manipulating the Clipboard.
   
  **Class:** <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy> (provides access to <xref:System.Windows.Forms.Clipboard>)  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>   

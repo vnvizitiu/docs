@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Declaring and Raising Events (Visual Basic) | Microsoft Docs"
+title: "Declaring and Raising Events (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "raising events, walkthroughs"
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -50,7 +50,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
 #### To build the code example for this topic  
   
-1.  Open a new [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Windows Application project and create a form named `Form1`.  
+1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project and create a form named `Form1`.  
   
 2.  Add two buttons and a label to `Form1`.  
   
@@ -99,4 +99,4 @@ This walkthrough demonstrates how to declare and raise events for a class named 
  <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>   
  <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>   
  [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "My.Computer.Network.UploadFile method"
 ms.assetid: a8b37924-c523-4fd3-b5ca-cb0074df29cd
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Upload a File in Visual Basic
-The <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method can be used to upload a file and store it to a remote location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed that shows the progress of the download and allows users to cancel the operation.  
+The <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method can be used to upload a file and store it to a remote location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed that shows the progress of the upload and allows users to cancel the operation.  
   
 ### To upload a file  
   

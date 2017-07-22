@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -183,5 +183,5 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [DataContext Methods (O/R Designer)](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)   
+ [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)   
  [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](http://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)

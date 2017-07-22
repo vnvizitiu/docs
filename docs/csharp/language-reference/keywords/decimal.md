@@ -32,17 +32,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # decimal (C# Reference)
-The `decimal` keyword indicates a 128-bit data type. Compared to floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
+The `decimal` keyword indicates a 128-bit data type. Compared to other floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
   
 |Type|Approximate Range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0 to 28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
+|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
   
 ## Literals  
  If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:  
   
-```  
-  
+```csharp
 decimal myMoney = 300.5m;  
 ```  
   
@@ -51,21 +50,19 @@ decimal myMoney = 300.5m;
 ## Conversions  
  The integral types are implicitly converted to `decimal` and the result evaluates to `decimal`. Therefore you can initialize a decimal variable using an integer literal, without the suffix, as follows:  
   
-```  
-  
+```csharp
 decimal myMoney = 300;  
 ```  
   
- There is no implicit conversion between floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
+ There is no implicit conversion between other floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
   
-```  
-  
-      decimal myMoney = 99.9m;  
+```csharp
+decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
 ```  
   
- You can also mix `decimal` and numeric integral types in the same expression. However, mixing `decimal` and floating-point types without a cast causes a compilation error.  
+ You can also mix `decimal` and numeric integral types in the same expression. However, mixing `decimal` and other floating-point types without a cast causes a compilation error.  
   
  For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).  
   
@@ -77,7 +74,7 @@ myMoney = (decimal)x;
 ## Example  
  The following example causes a compiler error by trying to add [double](../../../csharp/language-reference/keywords/double.md) and `decimal` variables.  
   
-```cs  
+```csharp  
 double dub = 9;  
 // The following line causes an error that reads "Operator '+' cannot be applied to   
 // operands of type 'double' and 'decimal'"  
@@ -86,7 +83,6 @@ Console.WriteLine(dec + dub);
 // You can fix the error by using explicit casting of either operand.  
 Console.WriteLine(dec + (decimal)dub);  
 Console.WriteLine((double)dec + dub);  
-  
 ```  
   
  The result is the following error:  
@@ -103,7 +99,7 @@ Console.WriteLine((double)dec + dub);
  [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_2.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Decimal>   
@@ -114,4 +110,4 @@ Console.WriteLine((double)dec + dub);
  [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
- [Standard Numeric Format Strings](http://msdn.microsoft.com/library/580e57eb-ac47-4ffd-bccd-3a1637c2f467)
+ [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

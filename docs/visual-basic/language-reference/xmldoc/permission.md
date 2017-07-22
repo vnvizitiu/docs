@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "permission XML tag"
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,7 +39,7 @@ Specifies a required permission for the member.
   
 ## Syntax  
   
-```  
+```xml  
 <permission cref="member">description</permission>  
 ```  
   

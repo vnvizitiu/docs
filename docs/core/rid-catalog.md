@@ -1,6 +1,6 @@
 ---
-title: .NET Core Runtime IDentifier (RID) catalog
-description: .NET Core Runtime IDentifier (RID) catalog
+title: .NET Core Runtime IDentifier (RID) catalog | Microsoft Docs
+description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .NET Core.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -100,9 +100,6 @@ For the latest version, please check the [runtime.json](https://github.com/dotne
 
 * Red Hat Enterprise Linux
     * `rhel.7-x64`
-    * `rhel.7.0-x64`
-    * `rhel.7.1-x64`
-    * `rhel.7.2-x64`
 * Ubuntu
     * `ubuntu.14.04-x64`
     * `ubuntu.14.10-x64`

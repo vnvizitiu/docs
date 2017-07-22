@@ -48,18 +48,17 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
 -   Specify a non-random file name.  
   
-    ```cs  
+    ```csharp  
     // Comment out the following line.  
     //string fileName = System.IO.Path.GetRandomFileName();  
   
     // Replace that line with the following assignment.  
     string fileName = "MyNewFile.txt";  
-  
     ```  
   
 -   Replace the `if`-`else` statement with the `using` statement in the following code.  
   
-    ```cs  
+    ```csharp  
     using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))   
     {  
         for (byte i = 0; i < 100; i++)  
@@ -67,7 +66,6 @@ You can programmatically create a folder on your computer, create a subfolder, c
             fs.WriteByte(i);  
         }  
     }  
-  
     ```  
   
  Run the example several times to verify that data is added to the file each time.  
@@ -94,4 +92,4 @@ You can programmatically create a folder on your computer, create a subfolder, c
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

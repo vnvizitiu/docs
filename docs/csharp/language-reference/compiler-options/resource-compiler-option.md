@@ -40,7 +40,7 @@ Embeds the specified resource into the output file.
   
 ## Syntax  
   
-```  
+```console  
 /resource:filename[,identifier[,accessibility-modifier]]  
 ```  
   
@@ -80,10 +80,10 @@ Embeds the specified resource into the output file.
 ## Example  
  Compile `in.cs` and attach resource file `rf.resource`:  
   
-```  
+```console  
 csc /resource:rf.resource in.cs  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

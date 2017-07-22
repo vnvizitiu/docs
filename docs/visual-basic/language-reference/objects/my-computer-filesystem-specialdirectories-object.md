@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "SpecialDirectories object"
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -47,7 +47,7 @@ Provides properties for accessing commonly referenced directories.
   
  **Class:** <xref:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy> (provides access to <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>)  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  [My.Computer.FileSystem Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)   

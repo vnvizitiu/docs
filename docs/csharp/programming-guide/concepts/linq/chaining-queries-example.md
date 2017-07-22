@@ -23,7 +23,7 @@ This example builds on the previous example and shows what happens when you chai
 ## Example  
  In this example, another extension method is introduced, `AppendString`, which appends a specified string onto every string in the source collection, and then yields the new strings.  
   
-```cs  
+```csharp  
 public static class LocalExtensions  
 {  
     public static IEnumerable<string>  
@@ -84,7 +84,6 @@ Main: str >DEF!!!<
 ToUpper: source >ghi<  
 AppendString: source >GHI<  
 Main: str >GHI!!!<  
-  
 ```  
   
  In this example, you can see that each extension method operates one at a time for each item in the source collection.  

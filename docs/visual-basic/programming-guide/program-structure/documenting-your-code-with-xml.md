@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -36,10 +36,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Documenting Your Code with XML (Visual Basic)
-In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], you can document your code using XML  
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can document your code using XML  
   
 ## XML Documentation Comments  
- [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
   
  The XML file can be consumed or otherwise manipulated as XML. This file is located in the same directory as the output .exe or .dll file of your project.  
   
@@ -53,7 +53,7 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
   
     -   The `cref` attribute can be attached to any tag to provide a reference to a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler also respects any `Imports` statements when looking for a type described in the `cref` attribute.  
   
-    -   The \<summary> tag is used by IntelliSense in [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] to display additional information about a type or member.  
+    -   The \<summary> tag is used by IntelliSense in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to display additional information about a type or member.  
   
 ## Related Sections  
  For details on creating an XML file with documentation comments, see the following topics:  
@@ -66,7 +66,7 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
   
 -   [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
   
--   [XML Tools in Visual Studio](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)  
+-   [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
 ## See Also  
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)   

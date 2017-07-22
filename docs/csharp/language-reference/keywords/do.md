@@ -46,11 +46,11 @@ The `do` statement executes a statement or a block of statements repeatedly unti
  A `do-while` loop can also be exited by the [goto](../../../csharp/language-reference/keywords/goto.md), [return](../../../csharp/language-reference/keywords/return.md), or [throw](../../../csharp/language-reference/keywords/throw.md) statements.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [do-while Statement (C++)](https://docs.microsoft.com/cpp/cpp/do-while-statement-cpp)   
+ [do-while Statement (C++)](/cpp/cpp/do-while-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

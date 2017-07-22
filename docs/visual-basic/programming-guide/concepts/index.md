@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -30,8 +30,8 @@ This section explains programming concepts in the Visual Basic language.
 |Title|Description|  
 |-----------|-----------------|  
 |[Assemblies and the Global Assembly Cache (Visual Basic)](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)|Describes how to create and use assemblies.|  
-|[Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)|Describes how to write asynchronous solutions by using [Async](../../../visual-basic/language-reference/modifiers/async.md) and [Await](../../../visual-basic/language-reference/operators/await-operator.md) keywords. Includes a walkthrough.|  
-|[Attributes (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
+|[Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)|Describes how to write asynchronous solutions by using [Async](../../../visual-basic/language-reference/modifiers/async.md) and [Await](../../../visual-basic/language-reference/operators/await-operator.md) keywords. Includes a walkthrough.|  
+|[Attributes overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
 |[Caller Information (Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md)|Describes how to obtain information about the caller of a method. This information includes the file path and the line number of the source code and the member name of the caller.|  
 |[Collections (Visual Basic)](../../../visual-basic/programming-guide/concepts/collections.md)|Describes some of the types of collections provided by the .NET Framework. Demonstrates how to use simple collections and collections of key/value pairs.|  
 |[Covariance and Contravariance (Visual Basic)](../../../visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md)|Shows how to enable implicit conversion of generic type parameters in interfaces and delegates.|  

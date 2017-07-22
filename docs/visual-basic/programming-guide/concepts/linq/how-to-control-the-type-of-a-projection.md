@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: a0171276-0b46-4817-aee5-a8d5191b12fe
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Control the Type of a Projection (Visual Basic)
@@ -83,7 +83,6 @@ Sub Main()
         Console.WriteLine(cust)  
     Next  
 End Sub  
-  
 ```  
   
  This code produces the following output:  

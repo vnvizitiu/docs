@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "statements [Visual Basic], about statements"
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -45,7 +45,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Statements in Visual Basic
-A statement in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] is a complete instruction. It can contain keywords, operators, variables, constants, and expressions. Each statement belongs to one of the following categories:  
+A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruction. It can contain keywords, operators, variables, constants, and expressions. Each statement belongs to one of the following categories:  
   
 -   **Declaration Statements**, which name a variable, constant, or procedure, and can also specify a data type.  
   
@@ -67,7 +67,7 @@ A statement in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq
  The third declaration is the `Dim` statement, which declares the variable `thisWidget`. The data type is a specific object, namely an object created from the `Widget` class. You can declare a variable to be of any elementary data type or of any object type that is exposed in the application you are using.  
   
 ### Initial Values  
- When the code containing a declaration statement runs, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] reserves the memory required for the declared element. If the element holds a value, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] initializes it to the default value for its data type. For more information, see "Behavior" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
+ When the code containing a declaration statement runs, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] reserves the memory required for the declared element. If the element holds a value, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] initializes it to the default value for its data type. For more information, see "Behavior" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
   
  You can assign an initial value to a variable as part of its declaration, as the following example illustrates.  
   
@@ -135,7 +135,7 @@ A statement in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq
 ### Type Conversions in Assignment Statements  
  The value you assign to a variable, property, or array element must be of a data type appropriate to that destination element. In general, you should try to generate a value of the same data type as that of the destination element. However, some types can be converted to other types during assignment.  
   
- For information on converting between data types, see [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md). In brief, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] automatically converts a value of a given type to any other type to which it widens. A *widening conversion* is one in that always succeeds at run time and does not lose any data. For example, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] converts an `Integer` value to `Double` when appropriate, because `Integer` widens to `Double`. For more information, see [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
+ For information on converting between data types, see [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md). In brief, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] automatically converts a value of a given type to any other type to which it widens. A *widening conversion* is one in that always succeeds at run time and does not lose any data. For example, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] converts an `Integer` value to `Double` when appropriate, because `Integer` widens to `Double`. For more information, see [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
  *Narrowing conversions* (those that are not widening) carry a risk of failure at run time, or of data loss. You can perform a narrowing conversion explicitly by using a type conversion function, or you can direct the compiler to perform all conversions implicitly by setting `Option Strict Off`. For more information, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).  
   
@@ -166,13 +166,13 @@ A statement in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq
 |After the `Is` and `IsNot` operators.|[!code-vb[VbVbalrLineContinuation#8](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_21.vb)]<br /><br /> For more information, see [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
 |After a member qualifier character (`.`) and before the member name. However, you must include a line-continuation character (_) following a member qualifier character when you are using the `With` statement or supplying values in the initialization list for a type. Consider breaking the line after the assignment operator (for example, `=`) when you are using `With` statements or object initialization lists.|[!code-vb[VbVbalrLineContinuation#5](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_19.vb)]<br />[!code-vb[VbVbalrLineContinuation#14](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_22.vb)]<br /><br /> For more information, see [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md) or [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md).|  
 |After an XML axis property qualifier (`.` or `.@` or `...`). However, you must include a line-continuation character (_) when you specify a member qualifier when you are using the `With` keyword.|[!code-vb[VbVbalrLineContinuation#9](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_23.vb)]<br /><br /> For more information, see [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md).|  
-|After a less-than sign (<) or before a greater-than sign (`>`) when you specify an attribute. Also after a greater-than sign (`>`) when you specify an attribute. However, you must include a line-continuation character (_) when you specify assembly-level or module-level attributes.|[!code-vb[VbVbalrLineContinuation#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_24.vb)]<br /><br /> For more information, see [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md).|  
+|After a less-than sign (<) or before a greater-than sign (`>`) when you specify an attribute. Also after a greater-than sign (`>`) when you specify an attribute. However, you must include a line-continuation character (_) when you specify assembly-level or module-level attributes.|[!code-vb[VbVbalrLineContinuation#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_24.vb)]<br /><br /> For more information, see [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md).|  
 |Before and after query operators (`Aggregate`, `Distinct`, `From`, `Group By`, `Group Join`, `Join`, `Let`, `Order By`, `Select`, `Skip`, `Skip While`, `Take`, `Take While`, `Where`, `In`, `Into`, `On`, `Ascending`, and `Descending`). You cannot break a line between the keywords of query operators that are made up of multiple keywords (`Order By`, `Group Join`, `Take While`, and `Skip While`).|[!code-vb[VbVbalrLineContinuation#11](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_25.vb)]<br /><br /> For more information, see [Queries](../../../visual-basic/language-reference/queries/queries.md).|  
 |After the `In` keyword in a `For Each` statement.|[!code-vb[VbVbalrLineContinuation#12](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_26.vb)]<br /><br /> For more information, see [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md).|  
 |After the `From` keyword in a collection initializer.|[!code-vb[VbVbalrLineContinuation#13](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_27.vb)]<br /><br /> For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).|  
   
 ## Adding Comments  
- Source code is not always self-explanatory, even to the programmer who wrote it. To help document their code, therefore, most programmers make liberal use of embedded comments. Comments in code can explain a procedure or a particular instruction to anyone reading or working with it later. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] ignores comments during compilation, and they do not affect the compiled code.  
+ Source code is not always self-explanatory, even to the programmer who wrote it. To help document their code, therefore, most programmers make liberal use of embedded comments. Comments in code can explain a procedure or a particular instruction to anyone reading or working with it later. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] ignores comments during compilation, and they do not affect the compiled code.  
   
  Comment lines begin with an apostrophe (`'`) or `REM` followed by a space. They can be added anywhere in code, except within a string. To append a comment to a statement, insert an apostrophe or `REM` after the statement, followed by the comment. Comments can also go on their own separate line. The following example demonstrates these possibilities.  
   

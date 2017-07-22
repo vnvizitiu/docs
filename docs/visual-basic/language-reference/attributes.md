@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "attributes [Visual Basic]"
 ms.assetid: 5deb2b8a-1afd-4dbd-8ee8-f093d74ad0eb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Attributes (Visual Basic)
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides several attributes that allow objects interoperate with unmanaged code, and one attribute that enables module members to be accessed without the module name. The following table lists the attributes used by [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several attributes that allow objects interoperate with unmanaged code, and one attribute that enables module members to be accessed without the module name. The following table lists the attributes used by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 |||  
 |---|---|  
@@ -44,4 +44,4 @@ translation.priority.ht:
 |<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|Indicates that a string should be treated as if it were fixed length.|  
   
 ## See Also  
- [Attributes](../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../visual-basic/programming-guide/concepts/attributes/index.md)

@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "compatible data types"
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -47,12 +47,10 @@ Compares an object reference variable to a data type.
 ## Syntax  
   
 ```  
-  
 result = TypeOf objectexpression Is typename  
 ```  
   
 ```  
-  
 result = TypeOf objectexpression IsNot typename  
 ```  
   

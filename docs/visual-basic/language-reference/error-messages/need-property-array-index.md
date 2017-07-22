@@ -15,8 +15,8 @@ dev_langs:
   - "VB"
 ms.assetid: 69ec6d59-ffc4-48ac-8a28-fe6853389843
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -42,4 +42,4 @@ This property value consists of an array rather than a single value. You did not
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

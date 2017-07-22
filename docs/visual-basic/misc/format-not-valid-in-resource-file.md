@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID325"
 ms.assetid: e986ab45-e3ce-430e-8704-5882e5da1104
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Format not valid in resource file
-A resource file in your project does not follow the standard format for a Windows resource file or there is a mismatch between the resource file and the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] project.  
+A resource file in your project does not follow the standard format for a Windows resource file or there is a mismatch between the resource file and the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project.  
   
 ## To correct this error  
   

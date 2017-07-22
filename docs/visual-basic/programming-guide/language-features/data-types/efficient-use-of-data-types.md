@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "ChrW function, preferred to Chr"
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -55,7 +55,7 @@ Undeclared variables and variables declared without a data type are assigned the
 -   It results in faster execution of your code.  
   
 ## Most Efficient Data Types  
- For variables that never contain fractions, the integral data types are more efficient than the nonintegral types. In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], `Integer` and `UInteger` are the most efficient numeric types.  
+ For variables that never contain fractions, the integral data types are more efficient than the nonintegral types. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `Integer` and `UInteger` are the most efficient numeric types.  
   
  For fractional numbers, `Double` is the most efficient data type, because the processors on current platforms perform floating-point operations in double precision. However, operations with `Double` are not as fast as with the integral types such as `Integer`.  
   
@@ -78,4 +78,4 @@ Protected s As String
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Using IntelliSense](https://docs.microsoft.com/visualstudio/ide/using-intellisense)
+ [Using IntelliSense](/visualstudio/ide/using-intellisense)

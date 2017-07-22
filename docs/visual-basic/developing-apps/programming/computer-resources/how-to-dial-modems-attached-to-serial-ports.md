@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "My.Computer.Ports object"
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Dial Modems Attached to Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  Typically, the modem is connected to one of the serial ports on the computer. For your application to communicate with the modem, it must send commands to the appropriate serial port.  
   
@@ -61,7 +61,7 @@ This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE
 ## Example  
  [!code-vb[VbVbalrMyComputer#27](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-dial-modems-attached-to-serial-ports_4.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Compiling the Code  
  This example requires a reference to the <xref:System?displayProperty=fullName> namespace.  

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30251"
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -47,10 +47,10 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
   
 2.  If the type is in the same project, recompile the assembly containing the type.  
   
-3.  If the error recurs, reinstall the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler.  
+3.  If the error recurs, reinstall the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler.  
   
 4.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

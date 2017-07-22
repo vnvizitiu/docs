@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC31098"
 ms.assetid: 72528d02-77b7-4b4c-8b9e-d12f666f92ef
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -47,11 +47,11 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
   
 1.  Compile the program again to see if the error recurs.  
   
-2.  If the error recurs, save your work and restart [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+2.  If the error recurs, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
-3.  If the error persists, reinstall [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+3.  If the error persists, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

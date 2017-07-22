@@ -28,9 +28,9 @@ This topic shows how to create documents with namespaces.
 ## Example  
  To create an element or an attribute that is in a namespace, you first declare and initialize an <xref:System.Xml.Linq.XNamespace> object. You then use the addition operator overload to combine the namespace with the local name, expressed as a string.  
   
- The following example creates a document with one namespace. By default, [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] serializes this document with a default namespace.  
+ The following example creates a document with one namespace. By default, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] serializes this document with a default namespace.  
   
-```cs  
+```csharp  
 // Create an XML tree in a namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
@@ -50,7 +50,7 @@ Console.WriteLine(root);
 ## Example  
  The following example creates a document with one namespace. It also creates an attribute that declares the namespace with a namespace prefix. To create an attribute that declares a namespace with a prefix, you create an attribute where the name of the attribute is the namespace prefix, and this name is in the <xref:System.Xml.Linq.XNamespace.Xmlns%2A> namespace. The value of this attribute is the URI of the namespace.  
   
-```cs  
+```csharp  
 // Create an XML tree in a namespace, with a specified prefix  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
@@ -73,7 +73,7 @@ Console.WriteLine(root);
   
  By including namespace attributes in the root element, the namespaces are serialized so that http://www.adventure-works.com is the default namespace, and www.fourthcoffee.com is serialized with a prefix of "fc". To create an attribute that declares a default namespace, you create an attribute with the name "xmlns", without a namespace. The value of the attribute is the default namespace URI.  
   
-```cs  
+```csharp  
 // The http://www.adventure-works.com namespace is forced to be the default namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
@@ -104,7 +104,7 @@ Console.WriteLine(root);
 ## Example  
  The following example creates a document that contains two namespaces, both with namespace prefixes.  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XElement root = new XElement(aw + "Root",  
@@ -134,11 +134,11 @@ Console.WriteLine(root);
 ## Example  
  Another way to accomplish the same result is to use expanded names instead of declaring and creating an <xref:System.Xml.Linq.XNamespace> object.  
   
- This approach has performance implications. Each time you pass a string that contains an expanded name to [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] must parse the name, find the atomized namespace, and find the atomized name. This process takes CPU time. If performance is important, you might want to declare and use an <xref:System.Xml.Linq.XNamespace> object explicitly.  
+ This approach has performance implications. Each time you pass a string that contains an expanded name to [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] must parse the name, find the atomized namespace, and find the atomized name. This process takes CPU time. If performance is important, you might want to declare and use an <xref:System.Xml.Linq.XNamespace> object explicitly.  
   
  If performance is an important issue, see [Pre-Atomization of XName Objects (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md) for more information  
   
-```cs  
+```csharp  
 // Create an XML tree in a namespace, with a specified prefix  
 XElement root = new XElement("{http://www.adventure-works.com}Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  

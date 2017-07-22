@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "numeric expressions"
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -59,7 +59,7 @@ You can calculate numeric values through the use of numeric expressions. A *nume
   
      The first three lines show a literal, a constant, and a variable. Each one forms a valid numeric expression by itself. The final line shows a combination of a variable with two literals.  
   
-     Note that a numeric expression does not form a complete [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] statement by itself. You must use the expression as part of a complete statement.  
+     Note that a numeric expression does not form a complete [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statement by itself. You must use the expression as part of a complete statement.  
   
 #### To store a numeric value  
   

@@ -1,7 +1,7 @@
 C# Expression Trees Sample
 ================
 
-This sample is created during the [Expression Trees topic](https://docs.microsoft.com/dotnet/articles/csharp/expression-trees)
+This sample is created during the [Expression Trees topic](https://docs.microsoft.com/dotnet/csharp/expression-trees)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 
@@ -15,12 +15,10 @@ the code you write everyday in C#.
 Build and Run
 -------------
 
-To build and run the sample, type the following three commands:
+To build and run the sample, type the following two commands:
 
 `dotnet restore`
-`dotnet build`
 `dotnet run`
 
-`dotnet restore` installs all the dependencies for this sample into the current directory.
-`dotnet build` creates the output assembly (or assemblies).
-`dotnet run` runs the output assembly.
+`dotnet restore` restores the dependencies for this sample.
+`dotnet run` builds the sample and runs the output assembly.

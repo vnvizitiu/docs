@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "compilation, conditional"
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -67,7 +67,7 @@ In *conditional compilation*, particular blocks of code in a program are compile
   
 |To set constants in the Project Designer|  
 |---|  
-|-   Before creating your executable file, set constants in the **Project Designer** by following the steps provided in [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).|  
+|-   Before creating your executable file, set constants in the **Project Designer** by following the steps provided in [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties).|  
   
 |To set constants at the command line|  
 |---|  

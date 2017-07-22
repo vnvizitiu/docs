@@ -42,7 +42,7 @@ Used to obtain the size in bytes for an unmanaged type. Unmanaged types include 
   
  The following example shows how to retrieve the size of an `int`:  
   
-```cs  
+```csharp  
 // Constant value 4:  
 int intSize = sizeof(int);   
 ```  
@@ -74,7 +74,7 @@ int intSize = sizeof(int);
  [!code-cs[csrefKeywordsOperator#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/sizeof_1.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 
 ---
 # How to: Find Preceding Siblings (XPath-LINQ to XML) (C#)
-This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] child <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> axis.  
+This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] child <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> axis.  
   
  The XPath expression is:  
   
@@ -31,7 +31,7 @@ This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxl
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```cs  
+```csharp  
 XElement co = XElement.Load("CustomersOrders.xml");  
   
 XElement add = co.Element("Customers").Element("Customer").Element("FullAddress");  

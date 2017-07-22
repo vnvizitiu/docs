@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "operator overloading"
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -43,7 +43,7 @@ translation.priority.ht:
 # How to: Call an Operator Procedure (Visual Basic)
 You call an operator procedure by using the operator symbol in an expression. In the case of a conversion operator, you call the [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) to convert a value from one data type to another.  
   
- You do not call operator procedures explicitly. You just use the operator, or the `CType` function, in an assignment statement or an expression, the same way you ordinarily use an operator. [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] makes the call to the operator procedure.  
+ You do not call operator procedures explicitly. You just use the operator, or the `CType` function, in an assignment statement or an expression, the same way you ordinarily use an operator. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] makes the call to the operator procedure.  
   
  Defining an operator on a class or structure is also called *overloading* the operator.  
   

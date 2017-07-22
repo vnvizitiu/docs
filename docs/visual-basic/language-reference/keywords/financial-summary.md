@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "payment"
 ms.assetid: 474f973e-7103-42b7-aa4d-367c935e07e1
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Financial Summary (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

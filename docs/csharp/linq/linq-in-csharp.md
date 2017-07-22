@@ -1,8 +1,8 @@
 ---
-title: "LINQ in C#"
+title: LINQ in C# | Microsoft Docs
 description: Links to topics that provide more detailed information about LINQ.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

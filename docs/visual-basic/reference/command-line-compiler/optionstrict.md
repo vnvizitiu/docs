@@ -1,5 +1,5 @@
 ---
-title: "-optionstrict | Microsoft Docs"
+title: "/optionstrict | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "/optionstrict compiler option [Visual Basic]"
 ms.assetid: c7b10086-0fa4-49db-b3c8-4ae0db5957da
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -87,4 +87,4 @@ vbc /optionstrict+ test.vb
  [/warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

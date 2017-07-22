@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "conditional statements, loop structures"
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -40,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Loop Structures (Visual Basic)
-[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
   
  The following illustration shows a loop structure that runs a set of statements until a condition becomes true.  
   

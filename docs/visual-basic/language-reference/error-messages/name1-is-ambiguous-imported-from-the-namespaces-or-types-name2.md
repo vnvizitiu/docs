@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30561"
 ms.assetid: 761091f7-1018-4299-b481-3966a4a2c126
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &#39;&lt;name1&gt;&#39; is ambiguous, imported from the namespaces or types &#39;&lt;name2&gt;&#39;
-You have provided a name that is ambiguous and therefore conflicts with another name. The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler does not have any conflict resolution rules; you must disambiguate names yourself.  
+You have provided a name that is ambiguous and therefore conflicts with another name. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler does not have any conflict resolution rules; you must disambiguate names yourself.  
   
  **Error ID:** BC30561  
   

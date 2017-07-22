@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 
 ---
 # How to: Find a List of Child Elements (XPath-LINQ to XML) (C#)
-This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
+This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
   
  The XPath expression is: `./*`  
   
@@ -27,7 +27,7 @@ This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
-```cs  
+```csharp  
 XDocument cpo = XDocument.Load("PurchaseOrders.xml");  
 XElement po = cpo.Root.Element("PurchaseOrder").Element("Address");  
   

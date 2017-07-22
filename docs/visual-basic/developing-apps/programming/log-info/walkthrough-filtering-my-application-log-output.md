@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Filtering My.Application.Log Output (Visual Basic) | Microsoft Docs"
+title: "Filtering My.Application.Log Output (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "application event logs, output filtering"
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -44,7 +44,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 #### To build the sample application  
   
-1.  Open a new [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Windows Application project.  
+1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project.  
   
 2.  Add a button named Button1 to Form1.  
   
@@ -64,7 +64,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 6.  Close the application.  
   
-     For information on how to view the application's debug output window, see [Output Window](https://docs.microsoft.com/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
+     For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
   
     > [!NOTE]
     >  By default, the application flushes the log-file output when the application closes.  
@@ -158,7 +158,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
 9. Change the value of the `value` attribute back to "Information".  
   
     > [!NOTE]
-    >  The `DefaultSwitch` switch setting controls only `My.Application.Log`. It does not change how the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] <xref:System.Diagnostics.Trace?displayProperty=fullName> and <xref:System.Diagnostics.Debug?displayProperty=fullName> classes behave.  
+    >  The `DefaultSwitch` switch setting controls only `My.Application.Log`. It does not change how the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.Diagnostics.Trace?displayProperty=fullName> and <xref:System.Diagnostics.Debug?displayProperty=fullName> classes behave.  
   
 ## Individual Filtering For My.Application.Log Listeners  
  The previous example shows how to change the filtering for all `My.Application.Log` output. This example demonstrates how to filter an individual log listener. By default, an application has two listeners that write to the application's debug output and the log file.  
@@ -275,5 +275,5 @@ This walkthrough demonstrates how to change the default log filtering for the `M
  [Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)   
  [Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)   
  [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
- [Trace Switches](http://msdn.microsoft.com/library/8ab913aa-f400-4406-9436-f45bc6e54fbe)   
+ [Trace Switches](../../../../framework/debug-trace-profile/trace-switches.md)   
  [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)

@@ -48,7 +48,7 @@ In the .NET Framework, you can access file system information by using the follo
   
  The <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> classes represent a file or directory and contain properties that expose many of the file attributes that are supported by the NTFS file system. They also contain methods for opening, closing, moving, and deleting files and folders. You can create instances of these classes by passing a string that represents the name of the file, folder, or drive in to the constructor:  
   
-```cs  
+```csharp  
 System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");  
 ```  
   
@@ -77,4 +77,4 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

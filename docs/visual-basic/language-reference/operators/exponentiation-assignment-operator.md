@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "compound assignment statements"
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -44,7 +44,6 @@ Raises the value of a variable or property to the power of an expression and ass
 ## Syntax  
   
 ```  
-  
 variableorproperty ^= expression  
 ```  
   

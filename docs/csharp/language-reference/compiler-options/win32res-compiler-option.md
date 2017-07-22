@@ -38,7 +38,7 @@ The **/win32res** option inserts a Win32 resource in the output file.
   
 ## Syntax  
   
-```  
+```console  
 /win32res:filename  
 ```  
   
@@ -64,10 +64,10 @@ The **/win32res** option inserts a Win32 resource in the output file.
 ## Example  
  Compile `in.cs` and attach a Win32 resource file `rf.res` to produce `in.exe`:  
   
-```  
+```console  
 csc /win32res:rf.res in.cs  
 ```  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

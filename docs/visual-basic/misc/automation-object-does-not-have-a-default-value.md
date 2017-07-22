@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID443"
 ms.assetid: 162641f6-5a19-4c37-8c92-17929885e87e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Automation object does not have a default value
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] cannot determine the default member for the specified object.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] cannot determine the default member for the specified object.  
   
 ### To correct the error  
   

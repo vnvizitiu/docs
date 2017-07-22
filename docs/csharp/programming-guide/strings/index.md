@@ -75,7 +75,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 |---------------------|--------------------|----------------------|  
 |\\'|Single quote|0x0027|  
 |\\"|Double quote|0x0022|  
-|\\\|Backslash|0x005C|  
+|\\\\ |Backslash|0x005C|  
 |\0|Null|0x0000|  
 |\a|Alert|0x0007|  
 |\b|Backspace|0x0008|  
@@ -133,7 +133,7 @@ string s = String.Empty;
  [!code-cs[csProgGuideStrings#15](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_12.cs)]  
   
 ## Strings, Extension Methods and LINQ  
- Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] query expressions on strings. For more information, see [LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md).  
+ Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions on strings. For more information, see [LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md).  
   
 ## Related Topics  
   
@@ -153,6 +153,3 @@ string s = String.Empty;
 |[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
 |[LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to topics that explain programming constructs in C#.|  
-  
-## Featured Book Chapter  
- [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)

@@ -1,5 +1,5 @@
 ---
-title: Choosing between .NET Core and .NET Framework for server apps
+title: Choosing between .NET Core and .NET Framework for server apps | Microsoft Docs
 description: A guide on which flavor of .NET you should consider when building a server app in .NET.
 keywords: .NET, .NET Core, .NET Framework
 author: cartermp
@@ -49,7 +49,7 @@ The infrastructure platforms you could use are many. For large and complex micro
 
 ### Containers
 
-Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.  When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.  Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
+Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers. When creating and deploying a container, the size of its image is far smaller with .NET Core than with .NET Framework. Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
 
 You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as [Azure Container Service](https://azure.microsoft.com/services/container-service/) which can manage, orchestrate and scale your container-based application in the cloud.
 
@@ -87,7 +87,9 @@ Some .NET Framework technologies are not available in .NET Core. Some of them wi
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
-* Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.
+* Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as "ADO.NET Data Services") are only available on the .NET Framework and there are no plans to bring them to .NET Core.
+
+* Windows Presentation Foundation (WPF) and Windows Forms: WPF and Windows Forms applications are only available on the .NET Framework. There are no plans to port them to .NET Core. 
 
 * Language support: Visual Basic and F# don’t currently have tooling support .NET Core, but both will be supported in Visual Studio 2017 and later versions of Visual Studio.
 

@@ -1,10 +1,10 @@
 ---
-title: Tour of F#
+title: Tour of F# | Microsoft Docs
 description: Tour of F# 
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
 ms.author: phcart
-ms.date: 08/18/2016
+ms.date: 01/24/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -21,9 +21,9 @@ There are two primary concepts in F#: functions and types.  This tour will empha
 ## How to Run the Code Samples
 
 >[!NOTE]
-Eventually, this documentation site will have the ability to run these code samples directly in your browser.  If your browser supports Silverlight, you can use [TryFsharp](http://www.tryfsharp.org/Create) for the time being.
+Two options for running the code samples are [Try F#](http://www.tryfsharp.org/Create) (requires Silverlight) and [F# for Azure Notebooks](https://notebooks.azure.com/Microsoft/libraries/fsharp/html/FSharp%20for%20Azure%20Notebooks.ipynb) on Microsoft Azure.
 
-The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application in [Visual Studio](tutorials/getting-started/getting-started-visual-studio.md) or [Visual Studio Code and Ionide](tutorials/getting-started/getting-started-vscode.md).
+The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application.  See the [Get Started](./get-started/index.md) section to learn more.
 
 ## Functions and Modules
 
@@ -61,13 +61,13 @@ As of F# 4.1, you can also create `struct` tuples.  These also interoperate full
 
 [!code-fsharp[Tuples](../../samples/snippets/fsharp/tour.fs#L205-L218)]
 
-It's important to note that because `struct` tuples are value types, they are cannot be implicitly converted to reference tuples, or vice versa.  You must explicitly convert between a reference and struct tuple.
+It's important to note that because `struct` tuples are value types, they cannot be implicitly converted to reference tuples, or vice versa.  You must explicitly convert between a reference and struct tuple.
 
 ## Pipelines and Composition
 
-Pipe operators (`|>`, `<|`, `||>`, `<||`, `|||>`, `<|||`) and composition operators (`>>` and `<<`) are used extensively when processing data in F#.  These operators are functions which allow you to establish "pipelines" of functions in a flexible manner.  The following walks though how you could take advantage of these operators to build a simple functional pipeline.
+Pipe operators (`|>`, `<|`, `||>`, `<||`, `|||>`, `<|||`) and composition operators (`>>` and `<<`) are used extensively when processing data in F#.  These operators are functions which allow you to establish "pipelines" of functions in a flexible manner.  The following example walks through how you could take advantage of these operators to build a simple functional pipeline.
 
-[!code-fsharp[Pipelines](../../samples/snippets/fsharp/tour.fs#L227-L282)]
+[!code-fsharp[Pipelines](../../samples/snippets/fsharp/tour.fs#L227-L300)]
 
 The above sample made use of many features of F#, including list processing functions, first-class functions, and [partial application](language-reference/functions/index.md#partial-application-of-arguments).  Although a deep understanding of each of those concepts can become somewhat advanced, it should be clear how easily functions can be used to process data when building pipelines.
 
@@ -83,7 +83,7 @@ Lists, Arrays, and Sequences are three primary collection types in the F# core l
 
 [!code-fsharp[Arrays](../../samples/snippets/fsharp/tour.fs#L368-L407)]
 
-[Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays, capable of being your "view" into any logical series of elements.  They also stand out because can be ***lazy***, which means that elements can be computed only when they are needed.
+[Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays, capable of being your "view" into any logical series of elements.  They also stand out because they can be ***lazy***, which means that elements can be computed only when they are needed.
 
 [!code-fsharp[Sequences](../../samples/snippets/fsharp/tour.fs#L418-L452)]
 
@@ -165,7 +165,7 @@ One special case of Discriminated Union types is the Option Type, which is so us
 
 One unique feature of F#'s type system is the ability to provide context for numeric literals through Units of Measure.
 
-[Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, and eliminate runtime errors associated with that kind of work.
+[Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, thus eliminating runtime errors associated with that kind of work.
 
 [!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L818-L839)]
 
@@ -193,7 +193,7 @@ The presence of Classes, Records, Discriminated Unions, and Tuples leads to an i
 
 Tuples are great for returning multiple values from a function, and using an ad-hoc aggregate of values as a value itself.
 
-Records are a "step up" from Tuples, having named labels and support for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they can be used in Pattern Matching.
+Records are a "step up" from Tuples, having named labels and support for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they are easy to use with comparison.
 
 Discriminated Unions have many reasons, but the core benefit is to be able to utilize them in conjunction with Pattern Matching to account for all possible "shapes" that a data can have.  
 
@@ -203,6 +203,6 @@ Classes are great for a huge number of reasons, such as when you need to represe
 
 Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](tutorials/getting-started/index.md) to learn how to set up your development environment and write some code.
 
-The next steps for learning more can be whatever you like, but we recommend an [Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md) to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
+The next steps for learning more can be whatever you like, but we recommend [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md)--> to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
 
 Also, check out the [F# Language Reference](language-reference/index.md) to see a comprehensive collection of conceptual content on F#.

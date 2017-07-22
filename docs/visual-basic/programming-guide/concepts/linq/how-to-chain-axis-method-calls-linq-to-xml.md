@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: e4e22942-39bd-460f-b3c0-9f09e53d3aa9
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic)
@@ -39,7 +39,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <Name>Ellen Adams</Name>  
 <Name>Tai Yee</Name>  
 <Name>Cristian Osorio</Name>  
@@ -88,7 +88,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <ConfigParameter>FirstConfigParameter</ConfigParameter>  
 <ConfigParameter>SecondConfigParameter</ConfigParameter>  
 ```  
@@ -116,7 +116,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```xml  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Ellen Adams</aw:Name>  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Tai Yee</aw:Name>  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Cristian Osorio</aw:Name>  

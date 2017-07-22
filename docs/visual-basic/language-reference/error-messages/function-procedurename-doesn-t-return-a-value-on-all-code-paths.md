@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC42105"
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -51,7 +51,7 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
   
  If control passes to `Exit Function` or `End Function` and you have not assigned any value to the procedure name, the procedure returns the default value of the return data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42105  
   
@@ -64,4 +64,4 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
 ## See Also  
  [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
+ [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

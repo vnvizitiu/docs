@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "reading files"
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -86,4 +86,4 @@ This section explains how to perform tasks that are associated with reading from
  Demonstrates how to use the `My` feature with files and directories.  
   
  [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Demonstrates how to use [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] methods with files and directories.
+ Demonstrates how to use [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods with files and directories.

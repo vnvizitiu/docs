@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 9b3d5716-e6e4-47a7-a3e9-084d7fba5c28
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -53,7 +53,6 @@ Public Class ClassWithFriendMethod
         Console.WriteLine("Sample Method")  
     End Sub  
 End Class  
-  
 ```  
   
  Only assemblies that you explicitly specify as friends can access `Friend` types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `Friend` types in A.  
@@ -84,4 +83,4 @@ End Class
  [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)   
  [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

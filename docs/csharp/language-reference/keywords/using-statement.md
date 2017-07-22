@@ -54,12 +54,12 @@ Provides a convenient syntax that ensures the correct use of <xref:System.IDispo
  [!code-cs[csrefKeywordsNamespace#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_4.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [using Directive](../../../csharp/language-reference/keywords/using-directive.md)   
- [Garbage Collection](../../../standard/garbagecollection/index.md)   
- [Implementing a Dispose Method](http://msdn.microsoft.com/library/eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9)
+ [Garbage Collection](../../../standard/garbage-collection/index.md)   
+ [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)

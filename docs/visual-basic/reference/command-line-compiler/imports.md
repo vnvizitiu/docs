@@ -1,5 +1,5 @@
 ---
-title: "-imports (Visual Basic) | Microsoft Docs"
+title: "/imports (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-imports compiler option [Visual Basic]"
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

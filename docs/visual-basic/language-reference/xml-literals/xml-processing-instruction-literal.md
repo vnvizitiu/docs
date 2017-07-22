@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "processing instruction literal [Visual Basic]"
 ms.assetid: cef4f7f8-0011-4f64-8602-795077ad4f15
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -42,7 +42,7 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
   
 ## Syntax  
   
-```  
+```xml  
 <?piName [ = piData ] ?>  
 ```  
   
@@ -73,9 +73,9 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
  You can assign an XML processing instruction literal to a variable or include it in an XML document literal.  
   
 > [!NOTE]
->  An XML literal can span multiple lines without needing line continuation characters. This enables you to copy content from an XML document and paste it directly into a [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] program.  
+>  An XML literal can span multiple lines without needing line continuation characters. This enables you to copy content from an XML document and paste it directly into a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program.  
   
- The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler converts the XML processing instruction literal to a call to the <xref:System.Xml.Linq.XProcessingInstruction.%23ctor%2A> constructor.  
+ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler converts the XML processing instruction literal to a call to the <xref:System.Xml.Linq.XProcessingInstruction.%23ctor%2A> constructor.  
   
 ## Example  
  The following example creates a processing instruction identifying a style-sheet for an XML document.  

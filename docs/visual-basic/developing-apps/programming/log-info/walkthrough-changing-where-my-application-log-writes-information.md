@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Changing Where My.Application.Log Writes Information (Visual Basic) | Microsoft Docs"
+title: "Changing Where My.Application.Log Writes Information (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "event logs, changing output location"
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -61,7 +61,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 3.  Add these elements to that `<listeners>` section.  
   
-    ```  
+    ```xml  
     <!-- Uncomment to connect the application file log. -->  
     <!-- <add name="FileLog" /> -->  
     <!-- Uncomment to connect the event log. -->  
@@ -80,7 +80,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 6.  Add these elements to that `<sharedListeners>` section.  
   
-    ```  
+    ```xml  
     <add name="FileLog"  
          type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
                Microsoft.VisualBasic, Version=8.0.0.0,   
@@ -111,7 +111,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 7.  The content of the app.config file should be similar to the following XML:  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <configuration>  
       <system.diagnostics>  

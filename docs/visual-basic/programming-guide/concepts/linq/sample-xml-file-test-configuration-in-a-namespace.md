@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: aff02614-30ee-45e1-bc0f-d64b193d20b8
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Sample XML File: Test Configuration in a Namespace
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation. This is a test configuration file. The XML is in a namespace.  
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This is a test configuration file. The XML is in a namespace.  
   
 ## TestConfigInNamespace.xml  
   

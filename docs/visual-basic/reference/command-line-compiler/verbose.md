@@ -1,5 +1,5 @@
 ---
-title: "-verbose | Microsoft Docs"
+title: "/verbose | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "/verbose compiler option [Visual Basic]"
 ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

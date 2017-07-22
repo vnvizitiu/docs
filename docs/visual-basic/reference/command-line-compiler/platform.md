@@ -1,5 +1,5 @@
 ---
-title: "-platform (Visual Basic) | Microsoft Docs"
+title: "/platform (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-platform compiler option [Visual Basic]"
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
 caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -53,7 +53,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
 |`Itanium`|Compiles your assembly to be run by the 64-bit CLR on a computer with an Itanium processor.|  
 |`arm`|Compiles your assembly to be run on a computer with an ARM (Advanced RISC Machine) processor.|  
 |`anycpu`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on 32-bit versions of Windows and as a 64-bit application on 64-bit versions of Windows. This flag is the default value.|  
-|`anycpu32bitpreferred`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on both 32-bit and 64-bit versions of Windows. This flag is valid only for executables (.EXE) and requires [!INCLUDE[net_v45](../../../csharp/language-reference/compiler-options/includes/net_v45_md.md)].|  
+|`anycpu32bitpreferred`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on both 32-bit and 64-bit versions of Windows. This flag is valid only for executables (.EXE) and requires [!INCLUDE[net_v45](~/includes/net-v45-md.md)].|  
   
 ## Remarks  
  Use the `/platform` option to specify the type of processor targeted by the output file.  
@@ -96,7 +96,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   
-     For more information, see [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+     For more information, see [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Example  
  The following example illustrates how to use the `/platform` compiler option.  

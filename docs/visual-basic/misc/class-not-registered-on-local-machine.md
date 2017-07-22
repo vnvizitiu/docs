@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID463"
 ms.assetid: 40c4c622-41d8-4005-9303-c30abe0707bb
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -33,11 +33,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Class not registered on local machine
-This error is usually encountered as a result of a corrupted file. You may need to reinstall [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+This error is usually encountered as a result of a corrupted file. You may need to reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## To correct this error  
   
--   Reinstall [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+-   Reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)   

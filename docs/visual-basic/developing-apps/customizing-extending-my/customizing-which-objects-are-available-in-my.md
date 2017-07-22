@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My namespace"
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Customizing Which Objects are Available in My (Visual Basic)
-This topic describes how you can control which `My` objects are enabled by setting your project's `_MYTYPE` conditional-compilation constant. The [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] Integrated Development Environment (IDE) keeps the `_MYTYPE` conditional-compilation constant for a project in sync with the project's type.  
+This topic describes how you can control which `My` objects are enabled by setting your project's `_MYTYPE` conditional-compilation constant. The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integrated Development Environment (IDE) keeps the `_MYTYPE` conditional-compilation constant for a project in sync with the project's type.  
   
 ## Predefined _MYTYPE Values  
  You must use the `/define` compiler option to set the `_MYTYPE` conditional-compilation constant. When specifying your own value for the `_MYTYPE` constant, you must enclose the string value in backslash/quotation mark (\\") sequences. For example, you could use:  

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating and Implementing Interfaces (Visual Basic) | Microsoft Docs"
+title: "Creating and Implementing Interfaces (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "interfaces, creating"
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -44,11 +44,11 @@ Interfaces describe the characteristics of properties, methods, and events, but 
 > [!NOTE]
 >  This walkthrough doesn't provide information about how to create a user interface.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To define an interface  
   
-1.  Open a new [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Windows Application project.  
+1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project.  
   
 2.  Add a new module to the project by clicking **Add Module** on the **Project** menu.  
   

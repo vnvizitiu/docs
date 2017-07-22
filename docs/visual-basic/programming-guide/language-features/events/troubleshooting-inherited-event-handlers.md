@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "event handlers, troubleshooting"
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -51,4 +51,4 @@ This topic lists common issues that arise with event handlers in inherited compo
 -   If the inherited method does not have a `Handles` keyword, verify that your code does not contain an extra [AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) or any additional methods that handle the same event.  
   
 ## See Also  
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

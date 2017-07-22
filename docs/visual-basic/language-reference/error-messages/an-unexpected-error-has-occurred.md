@@ -15,8 +15,8 @@ dev_langs:
   - "VB"
 ms.assetid: 0d9f2a30-ff72-4355-8060-744f22339359
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -53,6 +53,6 @@ The application could not acquire a necessary operating system resource. Some of
 4.  Note the circumstances under which the error occurred, and call Microsoft Product Support Services  
   
 ## See Also  
- [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
- [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)

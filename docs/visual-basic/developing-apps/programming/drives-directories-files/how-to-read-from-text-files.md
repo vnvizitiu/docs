@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "text files, reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -76,7 +76,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText%2A> metho
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
- Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] source file.  
+ Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source file.  
   
  Verify all inputs before using the data in your application. The contents of the file may not be what is expected, and methods to read from the file may fail.  
   

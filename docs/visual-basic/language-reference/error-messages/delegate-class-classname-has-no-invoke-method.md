@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30220"
 ms.assetid: 6be0d61c-f2f9-4f9b-ab90-8871a0d7206d
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -48,7 +48,7 @@ A call to `Invoke` through a delegate has failed because `Invoke` is not impleme
 2.  Locate the code that implements the delegate class and make sure it implements the `Invoke` procedure.  
   
 ## See Also  
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)

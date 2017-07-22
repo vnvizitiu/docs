@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "TextFieldParser class"
 ms.assetid: d44bd2b0-7dfc-410b-a48b-534c1e97460b
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -54,4 +54,4 @@ Public Class TextFieldParser
   
  **Class:** <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]
+ **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]

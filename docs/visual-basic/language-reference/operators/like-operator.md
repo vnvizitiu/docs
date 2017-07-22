@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "string comparison [Visual Basic], Like operators"
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -57,7 +57,6 @@ Compares a string against a pattern.
 ## Syntax  
   
 ```  
-  
 result = string Like pattern  
 ```  
   
@@ -85,8 +84,8 @@ result = string Like pattern
 |`?`|Any single character|  
 |`*`|Zero or more characters|  
 |`#`|Any single digit (0–9)|  
-|`[` `charlist` `]`|Any single character in `charlist`|  
-|`[!` `charlist` `]`|Any single character not in `charlist`|  
+|`[charlist]`|Any single character in `charlist`|  
+|`[!charlist]`|Any single character not in `charlist`|  
   
 ## Character Lists  
  A group of one or more characters (`charlist`) enclosed in brackets (`[ ]`) can be used to match any single character in `string` and can include almost any character code, including digits.  

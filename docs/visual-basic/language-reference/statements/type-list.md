@@ -35,8 +35,8 @@ helpviewer_keywords:
   - "constraints, Class keyword"
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -59,8 +59,7 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
 ## Syntax  
   
 ```  
-  
-[genericmodifier] typename [ As constraintlist ]  
+[genericmodifier] typename [ As constraintlist ]  
 ```  
   
 ## Parts  
@@ -118,7 +117,7 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
 ## See Also  
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
  [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)   
- [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   

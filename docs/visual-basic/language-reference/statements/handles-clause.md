@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Handles keyword"
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -42,7 +42,6 @@ Declares that a procedure handles a specified event.
 ## Syntax  
   
 ```  
-  
 proceduredeclaration Handles eventlist  
 ```  
   
@@ -83,4 +82,4 @@ proceduredeclaration Handles eventlist
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

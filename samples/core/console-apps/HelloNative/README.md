@@ -1,7 +1,7 @@
 Hello Native Sample
 ================
 
-This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/articles/core/tutorials/using-with-xplat-cli)
+This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/core/tutorials/using-with-xplat-cli)
 for creating .NET Core Console Applications. Please see that topic for detailed steps on the code
 for this sample.
 
@@ -11,7 +11,7 @@ Key Features
 This is the basic Hello World sample for native output. It demonstrates how you build a native
 application using .NET Core on your platform: Linux, Mac, or Windows.
 
-Note that you can build a native images for any suported platform only from that platform. .NET Core
+Note that you can build a native images for any supported platform only from that platform. .NET Core
 does not support cross-compiling for supported platform.
 
 Build and Run

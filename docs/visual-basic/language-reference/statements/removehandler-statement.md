@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "RemoveHandler statement"
 ms.assetid: 647cd825-e877-4910-b4f1-8d168beebe6a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -67,4 +67,4 @@ RemoveHandler event, AddressOf eventhandler
  [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)   
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 0033e258-d9c4-4569-86f6-79b7c06d1204
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve a Single Child Element (LINQ to XML) (Visual Basic)
@@ -40,7 +40,6 @@ Console.WriteLine(e)
  This example produces the following output:  
   
 ```xml  
-  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
@@ -64,7 +63,6 @@ End Module
  This example produces the following output:  
   
 ```xml  
-  
 <aw:DeliveryNotes xmlns:aw="http://www.adventure-works.com">Please leave packages in shed by driveway.</aw:DeliveryNotes>  
 ```  
   
